@@ -1,0 +1,164 @@
+.bs-tooltip-left .arrow, .bs-tooltip-auto[x-placement^="left"] .arrow
+	&:before
+		// border-left-color: color-rgba($lime,0.7)
+		border-left-color: $lime
+.bs-tooltip-right .arrow, .bs-tooltip-auto[x-placement^="right"] .arrow
+	&:before
+		border-right-color: $lime
+.tooltip-inner
+	background: color-rgba($lime,0.7)
+	border: 2px solid $lime
+	font-weight: 500
+	color: color-rgba($main,0.8)
+	padding: 0.2rem 1rem
+
+// BUTTON
+.btn
+	display: inline-block
+	&.btn-primary
+		background: $yellow
+		color: $main
+		text-transform: uppercase
+		padding: 0px 40px
+		line-height: 50px
+		border: none
+		+fs(18rem)
+		font-weight: 300
+		+bor-rad(5px)
+		+media-breakpoint-down(lg)
+			line-height: 40px
+			+fs(16rem)
+			padding: 0px 30px
+		&:after
+			content: '\e87a'
+			font-family: 'Linearicons-Free'
+			margin-left: 15px
+		&:active, &:focus
+			box-shadow: 0 0 0 0.2rem color-rgba($yellow,0.5) !important
+			border-color: $yellow !important
+			background: darken($yellow,10%) !important
+			color: $main !important
+
+// FORM INIT
+.form-wrap
+	.form-group
+		margin-bottom: 10px
+		input, textarea
+			@extend .form-control
+			width: 100%
+			+bor-rad(5px)
+			line-height: 20px
+			+fs(13rem)
+			color: $main
+			background: $white
+			padding: 0.625rem 1.25rem
+			border: 1px solid darken($white,10%)
+			font-family: 'montserrat', sans-serif
+			&:active, &:focus
+				border-color: $blue
+				box-shadow: 0 0 0 0.2rem color-rgba($blue,0.5)
+		textarea
+			min-height: 130px
+	.frm-btn
+	input[type="submit"]
+		@extend .btn-primary
+		+fs(13rem)
+		color: $white
+		background: $blue
+		line-height: 40px
+		font-weight: 300
+		text-transform: uppercase
+		padding: 0px 50px
+		+bor-rad(5px)
+		border: none
+		&:hover, &:active, &:focus
+			background: $blue
+			border-color: $blue
+			box-shadow: 0 0 0 0.2rem color-rgba($blue,0.5)
+// FORM COMPONENTS
+
+.checkbox
+	input
+		display: none
+		+ label
+			color: darken($white,60%)
+			padding: 0 0 0 25px
+			+pos(rel,null)
+			&:hover
+				color: $orange
+			&:before
+				content: ''
+				display: block
+				width: 16px
+				height: 16px
+				+bor-rad(3px)
+				border: 1px solid darken($white,10%)
+				+pos(abs, 3px null null 0)
+			&:after
+				content: '\f00c'
+				font-family: 'fontawesome'
+				+flexbox
+				justify-content: center
+				align-items: center
+				align-content: center
+				width: 16px
+				height: 16px
+				+fs(12rem)
+				+bor-rad(3px)
+				color: $white
+				background: $green
+				border-color: $green
+				+pos(abs, 3px null null 0)
+				z-index: 1
+				+transition(all,0.5s)
+				opacity: 0
+		&:checked
+			+ label
+				color: $main
+				&:after
+					opacity: 1
+.radio
+	input[type="radio"]
+		display: none
+		+ label
+			padding: 0 0 0 25px
+			+pos(rel,null)
+			+transition(all,0.3s)
+			&:hover
+				color: $orange
+			&:before
+				content: ''
+				display: block
+				width: 16px
+				height: 16px
+				+bor-rad(50px)
+				+pos(abs, 4px null null 0)
+				border: 2px solid darken($white,60%)
+			&:after
+				content: ''
+				display: block
+				width: 12px
+				height: 12px
+				background: darken($white,60%)
+				border: 3px solid $white
+				+pos(abs, 6px null null 2px)
+				+bor-rad(50px)
+				opacity: 0
+				+transition(all,0.3s)
+		&:checked
+			+ label
+				&:after
+					opacity: 1
+.file
+	input[type="file"]
+		display: none
+	label
+		&:hover
+			color: $black
+// label
+// 	a
+// 		color: $blue
+// 		text-decoration: underline
+// 		&:hover
+// 			color: $purple
+// 			text-decoration: underline

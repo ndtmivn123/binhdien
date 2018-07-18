@@ -1,0 +1,12 @@
+extends _layout/layout
+
+block variables
+	- var title = "Bình Điền"
+	- var bodyclass = ""
+
+block body 
+	include _layout/header
+	include _layout/banner
+	main
+		include _pages/ct-home
+	include _layout/footer

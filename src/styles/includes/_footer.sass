@@ -1,0 +1,67 @@
+footer
+	background: url(../img/footerbg.jpg) center center repeat
+	padding: 50px 0
+	text-align: center
+	.social
+		+flexbox
+		justify-content: center
+		align-items: center
+		align-content: center
+		a
+			+flexbox
+			align-items: center
+			align-content: center
+			justify-content: center
+			+bor-rad(50px)
+			color: #7398d2
+			+fs(18rem)
+			width: 40px
+			height: 40px
+			border: 1px solid color-rgba(#7398d2,0.2)
+			+ a
+				margin-left: 15px
+				+media-breakpoint-down(lg)
+			&:hover
+				background: #7398d2
+				color: $white
+				border-color: #7398d2
+	.footer-nav
+		margin: 20px 0
+		border: 1px solid color-rgba(#7398d2,0.2)
+		border-left: none
+		border-right: none
+		+flexbox
+		align-items: center
+		align-content: center
+		justify-content: center
+		+media-breakpoint-down(sm)
+			flex-wrap: wrap
+			padding: 10px 0
+		a
+			+fs(15rem)
+			font-weight: 300
+			display: block
+			text-transform: uppercase
+			color: $white
+			line-height: 20px
+			padding: 10px 0
+			+media-breakpoint-down(sm)
+				width: 100%
+				text-align: center
+				padding: 5px 10px
+			+ a
+				margin-left: 80px
+				+media-breakpoint-down(md)
+					margin-left: 40px
+				+media-breakpoint-down(sm)
+					margin-left: 0
+
+			&:hover
+				color: $yellow
+	.footer-contact
+		+fs(13rem)
+		color: darken($white,40%)
+		margin-bottom: 5px
+	.copyright
+		+fs(13rem)
+		color: darken($white,40%)

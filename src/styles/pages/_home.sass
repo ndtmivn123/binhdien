@@ -1,0 +1,259 @@
+.home-title
+	+fs(36rem)
+	font-weight: 600
+	color: $blue
+	margin-bottom: 30px
+	+media-breakpoint-down(sm)
+		+fs(24rem)
+	+ .nav-wrap
+		margin-top: -15px
+
+.page-title
+	+fs(30rem)
+	line-height: 1.3
+	text-transform: uppercase
+	color: $blue
+	margin-bottom: 30px
+	+media-breakpoint-down(sm)
+		+fs(24rem)
+
+.page-des
+	+fs(14rem)
+	line-height: 1.4
+	margin: -20px auto 30px
+
+.small-title
+	+fs(20rem)
+	font-weight: 600
+	margin-bottom: 25px
+
+.home-about
+	padding: 70px 0
+	background: $white url(../img/hbg1.png) bottom left no-repeat
+	background-size: 400px auto
+	&.s2
+		background: $white url(../img/hbg4.png) bottom left no-repeat
+		background-size: 400px auto
+	.about-title
+		+fs(60rem)
+		line-height: 1
+		font-weight: 600
+		color: $blue
+		margin-bottom: 15px
+		margin-left: -80px
+		+media-breakpoint-down(sm)
+			margin-left: 0
+			+fs(28rem)
+	.about-wrap
+		max-width: 1300px
+		margin: 0 auto
+		+media-breakpoint-down(lg)
+			max-width: 800px
+	.about-intro
+		background: url(../img/hbg2.jpg) center center no-repeat
+		background-size: cover
+		width: 720px
+		padding: 40px 150px
+		float: left
+		+media-breakpoint-down(lg)
+			width: 100%
+			float: none
+		+media-breakpoint-down(sm)
+			padding: 20px
+		.content
+			margin-bottom: 20px
+			&:before
+				content: ''
+				display: block
+				width: 70px
+				height: 1px
+				background: $blue
+				margin-bottom: 15px
+	.about-video, .about-img
+		width: 720px
+		float: right
+		+pos(rel,null)
+		z-index: 1
+		margin-top: -320px
+		+media-breakpoint-down(lg)
+			margin-top: 0
+			float: none
+			width: 100%
+	.about-video
+		&:before
+			content: '\f01d'
+			+fs(90rem)
+			+pos(abs, 0 null 0 0)
+			right: 0
+			color: $white
+			background: color-rgba($black,0.1)
+			+flexbox
+			justify-content: center
+			align-items: center
+			align-content: center
+	.btn-wrap
+		+media-breakpoint-down(sm)
+			text-align: center
+
+
+.btn-wrap
+	.btn-viewmore
+		display: inline-block
+		padding: 0px 30px
+		line-height: 38px
+		+fs(15rem)
+		font-weight: 500
+		color: $blue
+		border: 1px solid $blue
+		&:hover
+			background: $blue
+			color: $white
+.home-news
+	background: url(../img/hbg3.jpg) center center repeat
+	padding: 70px 0
+	.news-slick
+		overflow: hidden
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translateY(-50%))
+			+fs(0)
+			z-index: 3
+			background: color-rgba($white,0.5)
+			color: $main
+			width: 50px
+			height: 50px
+			&:before
+				content: ''
+				+fs(24rem)
+		.slick-prev
+			left: 0
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 0
+			&:before
+				content: '\f105'
+		.slick-list
+			margin: 0px -15px
+		.item
+			padding: 0px 15px
+	.news-list
+		.news-col
+			display: block
+			margin-bottom: 30px
+			figure
+				.news-img
+					width: 100%
+					+bor-rad(5px)
+					overflow: hidden
+					img
+						width: 100%
+				figcaption
+					padding: 15px 0
+					+flexbox
+					time
+						display: block
+						width: 65px
+						.date
+							+fs(50rem)
+							font-weight: 700
+							color: $blue
+							line-height: 1
+						.month
+							+fs(13rem)
+							color: $blue
+					.news-name
+						width: calc(100% - 65px)
+						padding: 10px 0
+						padding-left: 15px
+						+fs(14rem)
+						font-weight: 300
+.home-qc
+	background: url(../img/hbg5.jpg) center center repeat
+	padding: 70px 0
+	.home-title
+		color: $white
+	.qc-list
+		.row
+			margin: 0px -11px
+			+media-breakpoint-down(lg)
+				margin: 0px -8px
+		.col-12
+			padding: 0px 11px
+			+media-breakpoint-down(lg)
+				padding: 0px 8px
+		.qc-img
+			display: block
+			margin-bottom: 22px
+			+media-breakpoint-down(lg)
+				margin-bottom: 16px
+			img
+				width: 100%
+	.qc-slide
+		margin-bottom: 22px
+		.slick-dots
+			+pos(abs, null 0 10px 0)
+			text-align: center
+			li
+				display: inline-block
+				width: 10px
+				height: 10px
+				+bor-rad(50px)
+				background: $white
+				+ li
+					margin-left: 10px
+				button
+					display: none
+				&.slick-active
+					background: $yellow
+		.qc-img
+			margin-bottom: 0
+
+.home-partner
+	padding: 70px 0
+	background: $white
+	.partner-slick
+		overflow: hidden
+		.slick-prev, .slick-next
+			+pos(abs, 50% null null null)
+			+transform(translateY(-50%))
+			+fs(0)
+			z-index: 3
+			background: color-rgba($black,0.2)
+			color: $main
+			width: 50px
+			height: 50px
+			&:before
+				content: ''
+				+fs(24rem)
+		.slick-prev
+			left: 0
+			&:before
+				content: '\f104'
+		.slick-next
+			right: 0
+			&:before
+				content: '\f105'
+		.slick-list
+			margin: 0px -10px
+		.item
+			padding: 0px 10px
+			border: 2px solid transparent
+	.partner-list
+		.row
+			margin: 0px -10px
+			.col-6
+				padding: 0px 10px
+		.partner-logo
+			+flexbox
+			height: 130px
+			justify-content: center
+			align-items: center
+			align-content: center
+			border: 1px solid darken($white,10%)
+			margin-bottom: 20px
+			+media-breakpoint-down(lg)
+				height: 100px
+			img
+				max-width: 70%
+				max-width: 70%

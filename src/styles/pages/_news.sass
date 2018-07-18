@@ -1,0 +1,77 @@
+.news-page
+	padding: 50px 0
+	background: $white
+	.news-list
+		.news-col
+			margin-bottom: 20px
+			figure
+				.news-img
+					display: block
+					img
+						width: 100%
+				figcaption
+					padding: 15px 0
+					time
+						display: block
+						+fs(12rem)
+						line-height: 1
+						color: darken($white,40%)
+						margin-bottom: 10px
+						&:before
+							content: '\f073'
+							margin-right: 5px
+					.news-name
+						+fs(16rem)
+						font-weight: 600
+						color: $blue
+					.news-des
+						+fs(14rem)
+						color: darken($white,60%)
+						margin-top: 10px
+				&:hover
+					figcaption
+						.news-name
+							color: $yellow
+	.news-detail
+		.news-name
+			+fs(20rem)
+			line-height: 1.3
+			font-weight: 600
+			color: $blue
+			margin-bottom: 10px
+		time
+			display: block
+			+fs(12rem)
+			line-height: 1
+			color: darken($white,40%)
+			margin-bottom: 10px
+			&:before
+				content: '\f073'
+				margin-right: 5px
+	.author
+		+fs(16rem)
+		font-weight: 600
+		color: darken($white,60%)
+
+.sidebar-news
+	margin: 50px 0
+	.post-list
+		.post
+			display: block
+			margin-bottom: 20px
+			padding-bottom: 20px
+			border-bottom: 1px solid darken($white,10%)
+			figure
+				+flexbox
+				.post-img
+					width: 120px
+				figcaption
+					width: calc(100% - 120px)
+					padding-left: 15px
+					.post-name
+						+fs(13rem)
+						color: darken($white,60%)
+				&:hover
+					figcaption
+						.post-name
+							color: $blue

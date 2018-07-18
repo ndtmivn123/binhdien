@@ -1,0 +1,49 @@
+.contact-page
+	padding: 50px 0
+	background: $white
+	.contact-wrap
+		+flexbox
+		flex-wrap: wrap
+		max-width: 980px
+		margin: 0 auto
+		.contact-info
+			background: url(../img/contactbg.jpg) center center repeat
+			width: 60%
+			padding: 30px 40px
+			.title
+				+fs(18rem)
+				font-weight: 600
+				text-transform: uppercase
+				margin-bottom: 10px
+				color: $yellow
+			.info
+				margin-bottom: 25px
+				&:last-child
+					margin-bottom: 0
+			ul
+				li
+					+fs(13rem)
+					color: darken($white,13%)
+					padding-left: 25px
+					+pos(rel,null)
+					margin-bottom: 5px
+					.fa
+						+pos(abs, 0px null null 0)
+						+fs(16rem)
+			.btn-viewmap
+				color: $yellow
+				+fs(13rem)
+				margin-left: 40px
+				&:before
+					content: '\f041'
+					margin-right: 5px
+		.contact-form
+			background: darken($white,3%)
+			width: 40%
+			padding: 25px 30px
+			.module-title
+				+fs(18rem)
+				font-weight: 600
+				text-transform: uppercase
+				color: $blue
+				margin-bottom: 15px

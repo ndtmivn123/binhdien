@@ -1,0 +1,103 @@
+body.modal-open
+	padding-right: 0 !important
+	overflow: hidden
+	.modal
+		&::-webkit-scrollbar-track
+		&::-webkit-scrollbar
+			width: 0
+		&::-webkit-scrollbar-thumb
+.modal-backdrop
+	background: $white
+.modal
+	padding-right: 0 !important
+	.modal-dialog
+		margin: 100px auto
+		max-width: 1000px
+		.modal-content
+			+bor-rad(0)
+			border: none
+			box-shadow: none
+			// .modal-header
+			// 	+bor-rad(0)
+			// 	+pos(rel,null)
+			// 	padding: 0
+			// 	border: none
+			// 	// background: darken($white,3%)
+			// 	background: $orange
+			// 	.modal-title
+			// 		+fs(18rem)
+			// 		font-weight: 700
+			// 		color: $white
+			// 		padding: 10px 20px
+			// 	.close
+			// 		+pos(abs, 10px 15px null null)
+			// 		z-index: 5
+			// 		color: $white
+			// 		text-shadow: none
+			// 		cursor: pointer
+			// 		opacity: 1
+			// 		&:hover
+			// 			opacity: 1
+			// .modal-body
+			// 	background: $white
+			// 	padding: 20px
+		&.modal-contact
+			background: linear-gradient(#ea3f80 ,#b62560)
+			min-width: 1040px
+			.modal-content
+				background: none
+				+pos(rel,null)
+				padding: 80px 150px
+				.modal-header
+					border: none
+					padding: 0
+					margin: 0
+					.close
+						color: $white
+						text-shadow: none
+						opacity: 1
+						line-height: 1
+						+pos(abs, 30px 30px null null)
+						.lnr
+							line-height: 1
+				.modal-body
+					color: $white
+					.contact-title
+						+fs(40rem)
+						font-weight: 500
+						text-transform: uppercase
+						margin-bottom: 30px
+						+pos(rel,null)
+						&:before
+							content: 'i'
+							font-family: 'roboto'
+							text-transform: none
+							font-weight: normal
+							+flexbox
+							+fs(24rem)
+							justify-content: center
+							align-items: center
+							width: 40px
+							height: 40px
+							color: $white
+							+bor-rad(50px)
+							border: 1px solid $white
+							+pos(abs, 10px null null -60px)
+					.contact-info
+						ul
+							li
+								+pos(rel,null)
+								+fs(30rem)
+								font-weight: 500
+								color: $white
+								margin-bottom: 10px
+								.lnr
+									+flexbox
+									justify-content: center
+									align-items: center
+									width: 40px
+									height: 40px
+									+bor-rad(50px)
+									border: 1px solid $white
+									+pos(abs, 3px null null -60px)
+									+fs(18rem)

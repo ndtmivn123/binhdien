@@ -1,0 +1,206 @@
+body
+	padding-top: 110px
+	+media-breakpoint-down(lg)
+		padding-top: 60px
+header
+	background: url(../img/headerbg.jpg) center center repeat
+	+pos(fix, 0 0 null 0)
+	z-index: 1000
+	&.minimal
+		box-shadow: 0px 5px 10px color-rgba($black,0.1)
+		+media-breakpoint-up(xl)
+			.sitelogo
+				height: 80px
+				+transition(all,0.3s)
+			.col-right
+				.social, .language
+					margin-bottom: 0
+					+transition(all,0.5s)
+	.header-wrap
+		+flexbox
+		// flex-wrap: wrap
+		justify-content: space-between
+		align-items: center
+		align-content: center
+	.sitelogo
+		height: 110px
+		+flexbox
+		align-items: center
+		align-content: center
+		justify-content: center
+		+media-breakpoint-down(lg)
+			height: 60px
+		a
+			display: block
+		img
+			+media-breakpoint-down(lg)
+				max-height: 40px
+	.col-right
+		flex: auto
+		+flexbox
+		flex-wrap: wrap
+		justify-content: flex-end
+		align-items: center
+		align-content: center
+		+media-breakpoint-down(sm)
+			flex: unset
+	.social
+		+flexbox
+		align-items: center
+		align-content: center
+		background: $yellow
+		height: 30px
+		+bor-rad(5px)
+		margin-bottom: 10px
+		+media-breakpoint-down(lg)
+			margin-bottom: 0
+		+media-breakpoint-down(sm)
+			margin-left: 0
+			justify-content: center
+			margin: 0px 20px 15px
+		a
+			+flexbox
+			align-items: center
+			align-content: center
+			justify-content: center
+			+pos(rel,null)
+			+fs(18rem)
+			height: 14px
+			color: $blue
+			width: 45px
+			+ a
+				border-left: 1px solid $blue
+	.language
+		margin-left: 10px
+		margin-bottom: 10px
+		+media-breakpoint-down(lg)
+			margin-bottom: 0
+		+media-breakpoint-down(sm)
+			margin-left: 0
+			width: 100%
+			padding: 0px 20px
+		.dropdown-toggle
+			+fs(14rem)
+			color: $blue
+			background: darken($white,20%)
+			line-height: 20px
+			padding: 5px 15px
+			+bor-rad(5px)
+			+media-breakpoint-down(sm)
+				display: block
+				+pos(rel,null)
+			&:after
+				content: '\f107'
+				width: auto
+				height: auto
+				border: none
+				display: inline
+				vertical-align: middle
+				line-height: 1
+				+media-breakpoint-down(sm)
+					+pos(abs, 8px 15px null null)
+	.btn-showmenu
+		display: none
+		+media-breakpoint-down(lg)
+			+flexbox
+			// width: 40px
+			// height: 40px
+			// +bor-rad(3px)
+			// background: $blue
+			color: $blue
+			+fs(22rem)
+			align-items: center
+			align-content: center
+			justify-content: center
+			margin-right: 15px
+	.overlay
+		display: none
+		+pos(fix, 0 null 0 0)
+		right: 0
+		z-index: 800
+		background: $black
+		opacity: 0.8
+	.menu
+		// width: 100%
+		+flexbox
+		flex-wrap: wrap
+		align-items: center
+		align-content: center
+		+media-breakpoint-down(lg)
+			+pos(fix, 0 null 0 0)
+			width: 280px
+			background: url(../img/headerbg.jpg) center center repeat
+			z-index: 1000
+			display: block
+			+transform(translateX(-100%))
+			+transition(all,0.5s)
+			&.open
+				+transform(translateX(0%))
+		.menu-logo
+			display: none
+			// width: 100%
+			+media-breakpoint-down(lg)
+				display: block
+				padding: 20px 0
+				border-bottom: 2px solid $blue
+			.sitelogo
+				img
+					max-height: 50px
+		.menu-wrap
+			// width: 100%
+		ul.menu-link
+			+flexbox
+			+media-breakpoint-down(lg)
+				flex-wrap: wrap
+				padding: 10px 20px
+			li
+				+media-breakpoint-down(lg)
+					width: 100%
+				+ li
+					margin-left: 45px
+					+media-breakpoint-down(lg)
+						margin-left: 0
+				a
+					+fs(15rem)
+					font-weight: 500
+					text-transform: uppercase
+					color: $blue
+					display: block
+					padding: 5px 0
+					border-bottom: 1px solid transparent
+					+media-breakpoint-down(lg)
+						padding: 10px 0
+					&:hover
+						color: $yellow
+				&.active
+					a
+						color: $yellow
+						border-bottom-color: $yellow
+	.search
+		margin-left: 45px
+		+media-breakpoint-down(lg)
+			margin-left: 10px
+		.search-toggle
+			+fs(18rem)
+			color: $blue
+			cursor: pointer
+		.search-wrap
+			display: none
+			.searchbox
+				+pos(abs, 100% 0 null null)
+				background: $blue
+				color: $white
+				+flexbox
+				align-items: center
+				align-content: center
+				padding: 5px 20px
+				min-width: 250px
+				input
+					background: none
+					+fs(14rem)
+					color: $white
+					border: none
+					flex: auto
+				.searchbutton
+					color: $yellow
+					+fs(18rem)

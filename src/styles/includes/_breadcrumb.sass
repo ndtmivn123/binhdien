@@ -1,0 +1,50 @@
+.breadcrumb-wrap
+	+pos(rel,null)
+	.breadcrumb-bg
+		img
+			width: 100%
+			+media-breakpoint-down(md)
+				height: 200px
+				object-fit: cover
+	.breadcrumb-content
+		+pos(abs, 0 null 0 0)
+		right: 0
+		z-index: 5
+		+flexbox
+		flex-wrap: wrap
+		align-items: center
+		align-content: center
+		justify-content: center
+		text-align: center
+	.pagename
+		+fs(36rem)
+		color: $yellow
+		margin-bottom: 15px
+		width: 100%
+		+media-breakpoint-down(md)
+			+fs(28rem)
+		&:after
+			content: ''
+			display: block
+			width: 70px
+			height: 1px
+			background: $yellow
+			margin: 5px auto 0
+	.breadcrumb
+		margin: 0
+		padding: 0
+		background: none
+		+bor-rad(0)
+		li
+			color: $white
+			&:before
+				content: '\f105'
+				margin: 0px 10px
+			&:first-child
+				&:before
+					display: none
+			a
+				+fs(15rem)
+				color: $white
+				+media-breakpoint-down(md)
+					+fs(13rem)

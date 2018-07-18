@@ -1,0 +1,103 @@
+.career-page
+	padding: 50px 0
+	+media-breakpoint-down(md)
+		padding: 40px 0
+	+media-breakpoint-down(sm)
+		padding: 30px 0
+	.career-table
+		table
+			th, td
+				line-height: 20px
+				padding: 15px 20px
+				text-align: center
+				&:first-child
+					text-align: left
+					+media-breakpoint-down(sm)
+						width: 80%
+				&:nth-child(2)
+					+media-breakpoint-down(sm)
+						+fs(0)
+				&:nth-child(3), &:nth-child(4)
+					+media-breakpoint-down(md)
+						display: none
+			th
+				+fs(16rem)
+				font-weight: 600
+				text-transform: uppercase
+				color: $white
+				background: $blue
+			td
+				+fs(14rem)
+			tr
+				&:nth-child(odd)
+					background: darken($white,4%)
+	.job-title
+		+fs(20rem)
+		font-weight: 600
+		color: $blue
+		margin-bottom: 10px
+	.career-detail
+		time
+			+fs(12rem)
+			font-weight: 300
+			color: darken($white,40%)
+			display: block
+			margin-top: -10px
+			margin-bottom: 10px
+			&:before
+				content: '\f073'
+				margin-right: 5px
+	.content
+		// +fs(20rem)
+	.btn-download
+		+fs(18rem)
+		font-weight: 700
+		color: $red
+		display: block
+		margin-bottom: 20px
+		&:before
+			content: '\f019'
+			margin-right: 10px
+			+fs(24rem)
+			display: inline-block
+			vertical-align: middle
+	.btn-apply
+		display: inline-block
+		+fs(13rem)
+		text-transform: uppercase
+		padding: 0px 30px
+		background: $blue
+		line-height: 40px
+		color: $white
+		&:hover
+			background: darken($blue,10%)
+.other-job
+	padding: 60px 0
+	.module-title
+		+fs(20rem)
+		font-weight: 700
+		text-transform: uppercase
+		color: $yellow
+		background: darken($white,60%)
+		padding: 15px 30px
+		line-height: 20px
+	.job-list
+		.job
+			border-bottom: 1px solid darken($white,10%)
+			margin-bottom: 15px
+			padding-bottom: 15px
+			time
+				+fs(12rem)
+				font-weight: 300
+				color: darken($white,40%)
+				display: block
+				margin-bottom: 10px
+				&:before
+					content: '\f073'
+					margin-right: 5px
+			.job-name
+				+fs(14rem)
+				color: darken($white,60%)
+			&:hover
+				.job-name
+					color: $blue
