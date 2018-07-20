@@ -6537,6 +6537,7 @@ button, input[type=button] {
   display: block;
   clear: both; }
 
+<<<<<<< HEAD
 /*!
  * Font Awesome Free 5.1.1 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
@@ -10081,6 +10082,8 @@ readers do not read off random characters that represent icons */
   position: static;
   width: auto; }
 
+=======
+>>>>>>> a04eaf9472a88b1b3d4c4015a69f82d6de690bca
 @keyframes hotline-animate {
   0% {
     -webkit-transform: scale3d(1.3, 1.3, 1.3);
@@ -10342,6 +10345,8 @@ a {
   line-height: 1.5; }
   *:hover, *:active, *:focus {
     outline: none; }
+  *:before, *:after {
+    font-family: 'fontawesome'; }
 
 .lnr {
   font-family: 'linearicons-free'; }
@@ -10626,6 +10631,7 @@ img, iframe {
     font-size: 0; }
     .RadCaptcha .rcRefreshImage:after {
       content: '\f021';
+      font-family: "FontAwesome";
       font-size: 18px;
       color: #050505;
       position: absolute;

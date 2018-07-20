@@ -15,41 +15,41 @@ var sitePort = 8100;
 // ConCat
 gulp.task('concat-js', function() {
     return gulp.src([
-            "bower_components/popper/popper.min.js",
-            "bower_components/bootstrap/dist/js/bootstrap.js",
-            "bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js",
-            "bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.vi.min.js",
-            "bower_components/slick-carousel/slick/slick.js",
-            "bower_components/fancybox/dist/jquery.fancybox.js",
-            "bower_components/jquery-countimator/dist/js/jquery.countimator.js",
-            "bower_components/jquery.countdown/dist/jquery.countdown.js",
-            "bower_components/wow/dist/wow.js",
-            "bower_components/ScrollToFixed/jquery-scrolltofixed.js",
-            "bower_components/jquery-bar-rating/dist/jquery.barrating.min.js",
-            "bower_components/scrollup/dist/jquery.scrollUp.js",
-            "bower_components/parallax.js/parallax.js",
-            "bower_components/responsive-tabs/js/jquery.responsiveTabs.js",
-            "bower_components/page-scroll-to-id/jquery.malihu.PageScroll2id.js"
+        "bower_components/popper/popper.min.js",
+        "bower_components/bootstrap/dist/js/bootstrap.js",
+        "bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js",
+        "bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.vi.min.js",
+        "bower_components/slick-carousel/slick/slick.js",
+        "bower_components/fancybox/dist/jquery.fancybox.js",
+        "bower_components/jquery-countimator/dist/js/jquery.countimator.js",
+        "bower_components/jquery.countdown/dist/jquery.countdown.js",
+        "bower_components/wow/dist/wow.js",
+        "bower_components/ScrollToFixed/jquery-scrolltofixed.js",
+        "bower_components/jquery-bar-rating/dist/jquery.barrating.min.js",
+        "bower_components/scrollup/dist/jquery.scrollUp.js",
+        "bower_components/parallax.js/parallax.js",
+        "bower_components/responsive-tabs/js/jquery.responsiveTabs.js",
+        "bower_components/page-scroll-to-id/jquery.malihu.PageScroll2id.js"
         ])
         .pipe(concat('core.js'))
         .pipe(gulp.dest('./dist/js'));
 });
 gulp.task('concat-css', function() {
     return gulp.src([
-            "bower_components/fancybox/dist/jquery.fancybox.css",
-            "bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css",
-            "bower_components/hover/css/hover.css",
-            "bower_components/animate.css/animate.css",
-            "bower_components/fontawesome/web-fonts-with-css/css/fontfawesome.css",
-            "bower_components/fontawesome/web-fonts-with-css/css/solid.css",
-            "bower_components/fontawesome/web-fonts-with-css/css/regular.css",
-            "bower_components/fontawesome/web-fonts-with-css/css/brands.css",
-            "bower_components/linearicons/icon-font.min.css",
-            "bower_components/slick-carousel/slick/slick.css",
-            // "bower_components/slick-carousel/slick/slick-theme.css",
-            "bower_components/k-flex/dist/css/k-flex.css",
-            "bower_components/jquery-bar-rating/dist/themes/fontawesome-stars.css",
-            "bower_components/responsive-tabs/css/responsive-tabs.css"
+        "bower_components/fancybox/dist/jquery.fancybox.css",
+        "bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css",
+        "bower_components/hover/css/hover.css",
+        "bower_components/animate.css/animate.css",
+        "bower_components/fontawesome/web-fonts-with-css/css/fontfawesome.css",
+        "bower_components/fontawesome/web-fonts-with-css/css/solid.css",
+        "bower_components/fontawesome/web-fonts-with-css/css/regular.css",
+        "bower_components/fontawesome/web-fonts-with-css/css/brands.css",
+        "bower_components/linearicons/icon-font.min.css",
+        "bower_components/slick-carousel/slick/slick.css",
+        // "bower_components/slick-carousel/slick/slick-theme.css",
+        "bower_components/k-flex/dist/css/k-flex.css",
+        "bower_components/jquery-bar-rating/dist/themes/fontawesome-stars.css",
+        "bower_components/responsive-tabs/css/responsive-tabs.css"
         ])
         .pipe(concat('core.css'))
         .pipe(gulp.dest('./dist/css'));
@@ -99,7 +99,7 @@ gulp.task('js', () =>
 // Task copy font
 gulp.task('fonts', function() {
     gulp.src('src/fonts/**/*')
-        .pipe(gulp.dest('./dist/webfonts'))
+        .pipe(gulp.dest('./dist/fonts'))
         .pipe(browserSync.stream())
 });
 
