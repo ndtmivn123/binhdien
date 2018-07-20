@@ -40,9 +40,13 @@ gulp.task('concat-css', function() {
             "bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css",
             "bower_components/hover/css/hover.css",
             "bower_components/animate.css/animate.css",
-            "bower_components/font-awesome/css/font-awesome.css",
+            "bower_components/fontawesome/web-fonts-with-css/css/fontfawesome.css",
+            "bower_components/fontawesome/web-fonts-with-css/css/solid.css",
+            "bower_components/fontawesome/web-fonts-with-css/css/regular.css",
+            "bower_components/fontawesome/web-fonts-with-css/css/brands.css",
             "bower_components/linearicons/icon-font.min.css",
             "bower_components/slick-carousel/slick/slick.css",
+            // "bower_components/slick-carousel/slick/slick-theme.css",
             "bower_components/k-flex/dist/css/k-flex.css",
             "bower_components/jquery-bar-rating/dist/themes/fontawesome-stars.css",
             "bower_components/responsive-tabs/css/responsive-tabs.css"
@@ -95,7 +99,7 @@ gulp.task('js', () =>
 // Task copy font
 gulp.task('fonts', function() {
     gulp.src('src/fonts/**/*')
-        .pipe(gulp.dest('./dist/fonts'))
+        .pipe(gulp.dest('./dist/webfonts'))
         .pipe(browserSync.stream())
 });
 

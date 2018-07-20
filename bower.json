@@ -23,9 +23,10 @@
     "k-sass-core": "^3.0.0",
     "owl.carousel": "^2.1.6",
     "page-scroll-to-id": "^1.5.5",
-    "slick-carousel": "^1.6.0",
+    "slick-carousel": "^1.8.1",
     "slick": "*",
-    "waypoints": "^4.0.1"
+    "waypoints": "^4.0.1",
+    "fontawesome": "5.1.1"
   },
   "devDependencies": {
     "bootstrap": "^4.1.1",
