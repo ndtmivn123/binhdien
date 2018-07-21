@@ -7084,7 +7084,6 @@ img, iframe {
     font-size: 0; }
     .RadCaptcha .rcRefreshImage:after {
       content: '\f021';
-      font-family: "FontAwesome";
       font-size: 18px;
       color: #050505;
       position: absolute;
@@ -7849,6 +7848,26 @@ header {
       width: 45px; }
       header .social a + a {
         border-left: 1px solid #0a2653; }
+  header .Module-139 .ModuleContent {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background: #fdb414;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px; }
+    @media (max-width: 1199.98px) {
+      header .Module-139 .ModuleContent {
+        margin-bottom: 0; } }
+    @media (max-width: 767.98px) {
+      header .Module-139 .ModuleContent {
+        margin-left: 0;
+        justify-content: center;
+        margin: 0px 20px 15px; } }
   header .language {
     margin-left: 10px;
     margin-bottom: 10px; }
