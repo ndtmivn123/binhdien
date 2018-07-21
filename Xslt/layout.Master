@@ -66,9 +66,13 @@
 									</a>
 								</div>
 								<div class="col-right">
+<<<<<<< HEAD
 									<div class="social">
 										<portal:ModuleWrapper ID="mdl139" runat="server" ConfigureModuleId="139" />
 									</div>
+=======
+									<portal:ModuleWrapper ID="mdl139" runat="server" ConfigureModuleId="139" />
+>>>>>>> 0d680021f135d77a73a6cba36e4729326d90b5ff
 									<div class="language">
 										<portal:ModuleWrapper ID="mdl140" runat="server" ConfigureModuleId="140" />
 									</div>
@@ -79,6 +83,7 @@
 												</div>
 											</div>
 											<nav class="menu-wrap">
+<<<<<<< HEAD
 												<ul class="menu-link">
 													<li class="active">
 														<a href="index.html">trang chủ</a>
@@ -100,6 +105,12 @@
 													</li>
 												</ul>
 											</nav>
+=======
+													<portal:ModuleWrapper ID="mdl143" runat="server" ConfigureModuleId="143" />
+											</nav>
+
+
+>>>>>>> 0d680021f135d77a73a6cba36e4729326d90b5ff
 											<div class="search">
 												<div class="search-toggle">
 													<i class="fa fa-search" aria-hidden="true"></i>

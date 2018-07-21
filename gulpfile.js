@@ -15,12 +15,13 @@ var sitePort = 8100;
 // ConCat
 gulp.task('concat-js', function() {
     return gulp.src([
-        "bower_components/popper/popper.min.js",
+        "bower_components/jquery/dist/jquery.min.js",
+        "node_modules/popper.js/dist/umd/popper.min.js",
         "bower_components/bootstrap/dist/js/bootstrap.js",
         "bower_components/bootstrap-datepicker/dist/js/bootstrap-datepicker.js",
         "bower_components/bootstrap-datepicker/dist/locales/bootstrap-datepicker.vi.min.js",
         "bower_components/slick-carousel/slick/slick.js",
-        "bower_components/fancybox/dist/jquery.fancybox.js",
+        "bower_components/fancybox/dist/jquery.fancybox.min.js",
         "bower_components/jquery-countimator/dist/js/jquery.countimator.js",
         "bower_components/jquery.countdown/dist/jquery.countdown.js",
         "bower_components/wow/dist/wow.js",
@@ -36,14 +37,14 @@ gulp.task('concat-js', function() {
 });
 gulp.task('concat-css', function() {
     return gulp.src([
+        "node_modules/@fortawesome/fontawesome-free/css/brands.min.css",
+        "node_modules/@fortawesome/fontawesome-free/css/regular.min.css",
+        "node_modules/@fortawesome/fontawesome-free/css/solid.min.css",
+        "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css",
         "bower_components/fancybox/dist/jquery.fancybox.css",
         "bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css",
         "bower_components/hover/css/hover.css",
         "bower_components/animate.css/animate.css",
-        "bower_components/fontawesome/web-fonts-with-css/css/fontfawesome.css",
-        "bower_components/fontawesome/web-fonts-with-css/css/solid.css",
-        "bower_components/fontawesome/web-fonts-with-css/css/regular.css",
-        "bower_components/fontawesome/web-fonts-with-css/css/brands.css",
         "bower_components/linearicons/icon-font.min.css",
         "bower_components/slick-carousel/slick/slick.css",
         // "bower_components/slick-carousel/slick/slick-theme.css",

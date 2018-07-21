@@ -1,0 +1,15 @@
+<%--<div class="container">
+					<div class="logo">
+						<portal:SiteLogo ID="SiteLogo1" runat="server" />
+					</div>
+					<div class="top-nav">
+						<portal:SearchInput ID="SearchInput1" CssClass="search" runat="server" />
+						<portal:LanguageSelector ID="LanguageSelector1" XsltFileName="Language.xslt" ShowActive="true" runat="server" />
+					</div>
+					<div class="wrap-nav">
+						<div class="icon-main-menu-mobile"><div class="home-mobi"></div></div>
+						<div class="menu-main-pc">
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>--%>

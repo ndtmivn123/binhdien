@@ -207,11 +207,11 @@ $(document).ready(function () {
     }
 
     // Page scroll to id
-    $('.page-scroll a').mPageScroll2id({
-        offset: 120,
-        // highlightClass: 'active',
-        forceSingleHighlight: true
-    });
+    // $('.page-scroll a').mPageScroll2id({
+    //     offset: 120,
+    //     // highlightClass: 'active',
+    //     forceSingleHighlight: true,
+    // });
 
     // Page name breadcrumb
     $(".pagename").append($('.breadcrumb li a').eq(1).find('span').html());
