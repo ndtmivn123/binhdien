@@ -19,6 +19,11 @@
 	</xsl:template>
 
 	<xsl:template match="Language">
+			<xsl:if test="IsActive='true'">
+				<xsl:attribute name="class">
+					<xsl:text> active</xsl:text>
+				</xsl:attribute>
+			</xsl:if>
 			<a class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 				<xsl:attribute name="href">
 					<xsl:value-of select="Url"></xsl:value-of>
