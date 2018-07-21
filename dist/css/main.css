@@ -6799,7 +6799,7 @@ a {
   *:hover, *:active, *:focus {
     outline: none; }
   *:before, *:after {
-    font-family: 'fontawesome'; }
+    font-family: 'FontAwesome'; }
 
 .lnr {
   font-family: 'linearicons-free'; }
@@ -7925,7 +7925,7 @@ header {
         bottom: 0;
         left: 0;
         width: 280px;
-        background: url(../img/headerbg.jpg) center center repeat;
+        background: url(/Data/Sites/1/media/headerbg.jpg) center center repeat;
         z-index: 1000;
         display: block;
         -webkit-transform: translateX(-100%);
@@ -8024,7 +8024,14 @@ header {
           flex: auto; }
         header .search .search-wrap .searchbox .searchbutton {
           color: #fdb414;
-          font-size: 1.125rem; }
+          font-size: 1.125rem;
+          text-indent: -9999px;
+          display: flex; }
+          header .search .search-wrap .searchbox .searchbutton:after {
+            content: '\f002';
+            font-family: "FontAwesome";
+            text-indent: 0;
+            display: block; }
 
 .banner-wrap {
   position: relative; }
