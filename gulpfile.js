@@ -99,7 +99,7 @@ gulp.task('js', () =>
 // Task copy font
 gulp.task('fonts', function() {
     gulp.src('src/fonts/**/*')
-        .pipe(gulp.dest('./dist/fonts'))
+        .pipe(gulp.dest('./dist/webfonts'))
         .pipe(browserSync.stream())
 });
 
