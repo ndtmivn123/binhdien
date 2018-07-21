@@ -116,12 +116,10 @@
 													<i class="fa fa-search" aria-hidden="true"></i>
 												</div>
 												<div class="search-wrap">
-													<div class="searchbox">
-														<input type="text" placeholder="Tìm kiếm...">
-														<button class="searchbutton">
+														<portal:ModuleWrapper ID="mdl144" runat="server" ConfigureModuleId="144" />
+														<!-- <button class="searchbutton">
 															<i class="fa fa-search" aria-hidden="true"></i>
-														</button>
-													</div>
+														</button> -->
 												</div>
 											</div>
 									</div>
@@ -147,17 +145,15 @@
 						</asp:Panel>
 					</main>
 					<footer class="footer">
-						<div class="container">
-							<asp:Panel ID="divAltContent2" runat="server" CssClass="altcontent2">
-								<asp:ContentPlaceHolder ID="altContent2" runat="server"></asp:ContentPlaceHolder>
-							</asp:Panel>
-							<div class="col-sm-5 fmenu PaddR0">
-								<%--<portal:ModuleWrapper ID="mdl55" runat="server" ConfigureModuleId="55" />--%>
-							</div>
-							<div class="col-sm-7 info-f">
-								<portal:CopyrightLabel id="cl1" runat="server" ShowYear="true" BeginYear="2015" />
-							</div>
-						</div>
+							<div class="container">
+									<portal:ModuleWrapper ID="mdl145" runat="server" ConfigureModuleId="145" />
+									<portal:ModuleWrapper ID="mdl146" runat="server" ConfigureModuleId="146" />
+
+									<div class="footer-contact">
+											<portal:ModuleWrapper ID="mdl147" runat="server" ConfigureModuleId="147" />
+									</div>
+									<div class="copyright"><portal:ModuleWrapper ID="mdl148" runat="server" ConfigureModuleId="148" /></div>
+								</div>
 						<div class="clear"></div>
 					</footer>
 					<%--<ul>
