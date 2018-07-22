@@ -8238,7 +8238,8 @@ header {
     align-items: center;
     align-content: center;
     justify-content: center;
-    text-align: center; }
+    text-align: center;
+    flex-direction: column; }
   .breadcrumb-wrap .pagename {
     font-size: 2.25rem;
     color: #fdb414;

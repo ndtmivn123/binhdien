@@ -137,11 +137,6 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 									</a>
 								</div>
 								<div class="col-right">
-
-									<div class="social">
-										<portal:ModuleWrapper ID="mdl139" runat="server" ConfigureModuleId="139" />
-									</div>
-
 									<portal:ModuleWrapper ID="mdl139" runat="server" ConfigureModuleId="139" />
 									<div class="language">
 										<portal:ModuleWrapper ID="mdl140" runat="server" ConfigureModuleId="140" />
@@ -163,17 +158,6 @@ script(src='//oss.maxcdn.com/respond/1.4.2/respond.min.js')
 											</div>
 											<div class="search-wrap">
 												<portal:ModuleWrapper ID="mdl144" runat="server" ConfigureModuleId="144" />
-											<nav class="menu-wrap">
-													<portal:ModuleWrapper ID="mdl143" runat="server" ConfigureModuleId="143" />
-											</nav>
-
-											<div class="search">
-												<div class="search-toggle">
-													<i class="fa fa-search" aria-hidden="true"></i>
-												</div>
-												<div class="search-wrap">
-														<portal:ModuleWrapper ID="mdl144" runat="server" ConfigureModuleId="144" />
-												</div>
 											</div>
 										</div>
 									</div>
