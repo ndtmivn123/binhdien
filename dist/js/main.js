@@ -268,4 +268,6 @@ $(document).ready(function () {
 	$(".pagename").append($('.breadcrumb li a').eq(1).find('span').html());
 	$('.breadcrumb-content').attr('id', 'ccbreadcrumb');
 	$('#ccbreadcrumb').appendTo('.breadcrumb-wrap .container ');
+	// append form faq
+	$('.ccFaqForm ').appendTo('.support-page .send-mess ');
 });
