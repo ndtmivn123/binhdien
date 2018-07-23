@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
+
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
   <xsl:output method="html" indent="yes"/>
 
@@ -129,5 +129,5 @@
 			</a>
 		</li>
 	</xsl:template>
->>>>>>> 0d680021f135d77a73a6cba36e4729326d90b5ff
+
 </xsl:stylesheet>
