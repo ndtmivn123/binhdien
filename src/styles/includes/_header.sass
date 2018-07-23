@@ -144,7 +144,7 @@ header
 		+media-breakpoint-down(lg)
 			+pos(fix, 0 null 0 0)
 			width: 280px
-			background: url(../img/headerbg.jpg) center center repeat
+			background: url(/Data/Sites/1/media/headerbg.jpg) center center repeat
 			z-index: 1000
 			display: block
 			+transform(translateX(-100%))
@@ -219,3 +219,10 @@ header
 				.searchbutton
 					color: $yellow
 					+fs(18rem)
+					text-indent: -9999px
+					display: flex
+					&:after
+						content: '\f002'
+						font-family: "FontAwesome"
+						text-indent: 0
+						display: block

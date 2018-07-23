@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt" exclude-result-prefixes="msxsl">
   <xsl:output method="html" indent="yes"/>
 
@@ -85,9 +86,9 @@
       </a>
     </li>
   </xsl:template>
-=======
+
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt"
- exclude-result-prefixes="msxsl">
+ exclude-result-prefixes="msxsl>
 	<xsl:output method="html" indent="yes" />
 
 
@@ -129,5 +130,8 @@
 			</a>
 		</li>
 	</xsl:template>
+<<<<<<< HEAD
 
+=======
+>>>>>>> c62483ddf3a914dec4e23b32eb8a097357a8d934
 </xsl:stylesheet>
