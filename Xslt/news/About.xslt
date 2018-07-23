@@ -167,10 +167,8 @@
 									</xsl:if>
 									<xsl:text disable-output-escaping="yes">&lt;/div &gt;</xsl:text>
 									<xsl:text disable-output-escaping="yes">&lt;/div &gt;</xsl:text>
-									<xsl:if test="position()=last()">
-										<xsl:text disable-output-escaping="yes">&lt;/div &gt;</xsl:text>
-										<xsl:text disable-output-escaping="yes">&lt;/div &gt;</xsl:text>
-									</xsl:if>
+									<xsl:text disable-output-escaping="yes">&lt;/div &gt;</xsl:text>
+									<xsl:text disable-output-escaping="yes">&lt;/div &gt;</xsl:text>
 									<xsl:apply-templates select="NewsImages" mode="pos4Images"></xsl:apply-templates>
 									<xsl:if test="position()=last()">
 										<xsl:text disable-output-escaping="yes">&lt;/div &gt;</xsl:text>
