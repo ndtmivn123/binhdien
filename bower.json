@@ -25,7 +25,8 @@
     "page-scroll-to-id": "^1.5.5",
     "slick-carousel": "^1.6.0",
     "slick": "*",
-    "waypoints": "^4.0.1"
+    "waypoints": "^4.0.1",
+    "matchHeight": "matchheight#^0.7.2"
   },
   "devDependencies": {
     "bootstrap": "^4.1.1",

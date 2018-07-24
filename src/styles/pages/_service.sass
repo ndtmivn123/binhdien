@@ -68,7 +68,7 @@
 				.service-img
 					+media-breakpoint-down(md)
 						height: 250px
-	
+
 	.service-category
 		.row
 			margin: 0px -5px
@@ -112,7 +112,7 @@
 					opacity: 1
 			&.big, &.high
 				height: 430px
-	
+
 	.cate-title
 		+fs(20rem)
 		font-weight: 600
@@ -207,3 +207,40 @@
 					display: block
 					text-align: center
 					text-transform: none
+	.owl-nav
+		button
+			&.owl-prev, &.owl-next
+				+pad(.5rem_)
+				width: 3rem
+				height: 3rem
+				// background: darken(color-get($mau,trang),5%)
+				+bor-rad(50%)
+				text-align: center
+				&:focus
+					outline: none
+			&:hover, &.active
+				&.owl-prev, &.owl-next
+					// background: color-get($mau,main)
+		+media-breakpoint-up(lg)
+			margin-top: 0
+			button
+				&.owl-prev, &.owl-next
+					display: none
+					margin: 0
+					+transform(translateY(-50%))
+					&:focus
+						outline: none
+				&.owl-prev
+					+pos(abs, 50% null null -4rem)
+				&.owl-next
+					+pos(abs, 50% -4rem null null)
+		// Dots
+		.owl-dots
+			.owl-dot
+				&:focus
+					outline: none
+				span
+					// background: darken(color-get($mau,trang),5%)
+				&.active
+					span
+						// background: color-get($mau,main)
