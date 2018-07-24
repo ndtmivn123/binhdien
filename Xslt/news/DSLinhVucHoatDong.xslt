@@ -19,6 +19,11 @@
 					<xsl:apply-templates select="News" mode="ZoneNews2"></xsl:apply-templates>
 				</section>
 			</xsl:when>
+			<xsl:when test="position()=3">
+				<section class="service-section s3">
+					<xsl:apply-templates select="News" mode="ZoneNews3"></xsl:apply-templates>
+				</section>
+			</xsl:when>
 			<!-- <xsl:otherwise>
 
 				<xsl:if test="position()=4">
@@ -83,30 +88,36 @@
 		</div>
 	</xsl:template>
 	<xsl:template match="News" mode="ZoneNews2">
-			<div class="section-bg" style="background: url(img/service/bg.jpg) center center no-repeat;background-size: cover">
-				<xsl:attribute name="style">
-					<xsl:text>background: url(/Data/Sites/1/media/bg.jpg) center center no-repeat;background-size: cover</xsl:text>
-				</xsl:attribute>
-			</div>
-			<div class="container">
-				<div class="service-content">
-					<h2 class="page-title text-center"><xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-						<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of></h2>
-					<div class="page-des text-center"><xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of></div>
-					<div class="service-img">
-							<img>
-							<xsl:attribute name="src">
-								<xsl:value-of select="ImageUrl"></xsl:value-of>
-							</xsl:attribute>
-							<xsl:attribute name="alt">
-								<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-							</xsl:attribute>
-							<xsl:attribute name="title">
-								<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-							</xsl:attribute>
-							</img>
-					</div>
+		<div class="section-bg" style="background: url(img/service/bg.jpg) center center no-repeat;background-size: cover">
+			<xsl:attribute name="style">
+				<xsl:text>background: url(/Data/Sites/1/media/bg.jpg) center center no-repeat;background-size: cover</xsl:text>
+			</xsl:attribute>
+		</div>
+		<div class="container">
+			<div class="service-content">
+				<h2 class="page-title text-center">
+					<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+					<xsl:value-of select="EditLink" disable-output-escaping="yes"></xsl:value-of>
+				</h2>
+				<div class="page-des text-center">
+					<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+				</div>
+				<div class="service-img">
+					<img>
+					<xsl:attribute name="src">
+						<xsl:value-of select="ImageUrl"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="alt">
+						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:attribute name="title">
+						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+					</xsl:attribute>
+					</img>
 				</div>
 			</div>
+		</div>
+	</xsl:template>
+	<xsl:template match="News" mode="ZoneNews3">
 	</xsl:template>
 </xsl:stylesheet>
