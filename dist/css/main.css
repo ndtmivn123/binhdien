@@ -9192,10 +9192,28 @@ footer {
     flex-wrap: wrap;
     max-width: 980px;
     margin: 0 auto; }
+    @media (max-width: 991.98px) {
+      .contact-page .contact-wrap {
+        flex-direction: column; } }
+    .contact-page .contact-wrap input[type="submit"] {
+      font-size: 0.8125rem;
+      color: #fff;
+      background: #0a2653;
+      line-height: 40px;
+      font-weight: 300;
+      text-transform: uppercase;
+      padding: 0px 50px;
+      border-radius: 5px;
+      border: none; }
+    .contact-page .contact-wrap .form-group textarea {
+      min-height: 130px; }
     .contact-page .contact-wrap .contact-info {
-      background: url(../img/contactbg.jpg) center center repeat;
+      background: url(/Data/Sites/1/media/contactbg.jpg) center center repeat;
       width: 60%;
       padding: 30px 40px; }
+      @media (max-width: 991.98px) {
+        .contact-page .contact-wrap .contact-info {
+          width: 100%; } }
       .contact-page .contact-wrap .contact-info .title {
         font-size: 1.125rem;
         font-weight: 600;
@@ -9228,6 +9246,11 @@ footer {
       background: #f7f7f7;
       width: 40%;
       padding: 25px 30px; }
+      @media (max-width: 991.98px) {
+        .contact-page .contact-wrap .contact-form {
+          width: 100%; } }
+      .contact-page .contact-wrap .contact-form label {
+        display: none; }
       .contact-page .contact-wrap .contact-form .module-title {
         font-size: 1.125rem;
         font-weight: 600;

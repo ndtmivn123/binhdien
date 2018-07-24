@@ -6,10 +6,24 @@
 		flex-wrap: wrap
 		max-width: 980px
 		margin: 0 auto
+		+media-breakpoint-down(md)
+				flex-direction: column
+		input[type="submit"]
+			font-size: 0.8125rem
+			color: #fff
+			background: #0a2653
+			line-height: 40px
+			font-weight: 300
+			text-transform: uppercase
+			padding: 0px 50px
+			border-radius: 5px
+			border: none
 		.contact-info
-			background: url(../img/contactbg.jpg) center center repeat
+			background: url(/Data/Sites/1/media/contactbg.jpg) center center repeat
 			width: 60%
 			padding: 30px 40px
+			+media-breakpoint-down(md)
+				width: 100%
 			.title
 				+fs(18rem)
 				font-weight: 600
@@ -40,10 +54,17 @@
 		.contact-form
 			background: darken($white,3%)
 			width: 40%
+			+media-breakpoint-down(md)
+				width: 100%
 			padding: 25px 30px
+			label
+				display: none
 			.module-title
 				+fs(18rem)
 				font-weight: 600
 				text-transform: uppercase
 				color: $blue
 				margin-bottom: 15px
+	#ctl00_mainContent_ctl05_txtMessage
+		min-height: 130px
+		
