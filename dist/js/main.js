@@ -216,52 +216,52 @@ $(document).ready(function () {
 
 
 	// Cache selectors
-	var lastId,
-	    topMenu = $(".top-nav"),
-	    topMenuHeight = topMenu.outerHeight() + $('header').outerHeight(),
+	// var lastId,
+	// topMenu = $(".top-nav"),
+	// topMenuHeight = topMenu.outerHeight() + $('header').outerHeight(),
+	// // All list items
+	// menuItems = topMenu.find("a"),
+	// allHeight = $('header').height() + $('.top-nav').height() + 30,
+	// // Anchors corresponding to menu items
+	// scrollItems = menuItems.map(function(){
+	// 	var item = $($(this).attr("href"));
+	// 	if (item.length) { return item; }
+	// });
 
-	// All list items
-	menuItems = topMenu.find("a"),
-	    allHeight = $('header').height() + $('.top-nav').height() + 30,
+	// // Bind click handler to menu items
+	// // so we can get a fancy scroll animation
+	// menuItems.click(function(e){
+	// 	var href = $(this).attr("href"),
+	// 	offsetTop = href === "#" ? 0 : $(href).offset().top;
+	// 	$('html, body').stop().animate({
+	// 		scrollTop: offsetTop - allHeight
+	// 	}, 300);
+	// 	e.preventDefault();
+	// });
 
-	// Anchors corresponding to menu items
-	scrollItems = menuItems.map(function () {
-		var item = $($(this).attr("href"));
-		if (item.length) {
-			return item;
-		}
-	});
+	// // Bind to scroll
+	// $(window).scroll(function(){
+	// 	// Get container scroll position
+	// 	var fromTop = $(this).scrollTop()+topMenuHeight;
 
-	// Bind click handler to menu items
-	// so we can get a fancy scroll animation
-	menuItems.click(function (e) {
-		var href = $(this).attr("href"),
-		    offsetTop = href === "#" ? 0 : $(href).offset().top;
-		$('html, body').stop().animate({
-			scrollTop: offsetTop - allHeight
-		}, 300);
-		e.preventDefault();
-	});
+	// 	// Get id of current scroll item
+	// 	var cur = scrollItems.map(function(){
+	// 	if ($(this).offset().top < fromTop)
+	// 		return this;
+	// 	});
+	// 	// Get the id of the current element
+	// 	cur = cur[cur.length-1];
+	// 	var id = cur && cur.length ? cur[0].id : "";
 
-	// Bind to scroll
-	$(window).scroll(function () {
-		// Get container scroll position
-		var fromTop = $(this).scrollTop() + topMenuHeight;
+	// 	if (lastId !== id) {
+	// 	lastId = id;
+	// 	// Set/remove active class -- This is the part.
+	// 	menuItems
+	// 		.parent().find('a').removeClass("active")
+	// 		.find('a').end().filter("[href='#"+id+"']").addClass("active");
+	// 	}
+	// });
 
-		// Get id of current scroll item
-		var cur = scrollItems.map(function () {
-			if ($(this).offset().top < fromTop) return this;
-		});
-		// Get the id of the current element
-		cur = cur[cur.length - 1];
-		var id = cur && cur.length ? cur[0].id : "";
-
-		if (lastId !== id) {
-			lastId = id;
-			// Set/remove active class -- This is the part.
-			menuItems.parent().find('a').removeClass("active").find('a').end().filter("[href='#" + id + "']").addClass("active");
-		}
-	});
 
 	// Page name breadcrumb
 

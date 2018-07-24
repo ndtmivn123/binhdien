@@ -8842,16 +8842,22 @@ footer {
 
 .about-section1 .about-img {
   display: block;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  height: 100%; }
   .about-section1 .about-img img {
-    width: 100%; }
+    width: 100%;
+    height: 100%; }
 
 .about-section2 {
   background: #f2f2f2; }
   .about-section2 .about-img {
     text-align: center; }
     .about-section2 .about-img img {
+      width: 100%;
       border: 2px solid #fe651c; }
+
+.about-section3 img {
+  width: 100%; }
 
 .about-section4 .album-list .row {
   margin: 0px -2px; }
