@@ -221,28 +221,21 @@ $(document).ready(function() {
 	//     forceSingleHighlight: true,
 	// });
 
-
-	$(function() {
-		if ($('.service-section .owl-carousel').length) {
-			$('.service-section .owl-carousel').owlCarousel({
-				animateIn: 'fadeIn',
-				animateOut: 'fadeOut',
-				mouseDrag: false,
-				items: 1,
-				loop: true,
-				center: false,
-				padding: 10,
-				margin: 20,
-				navText: ['<i class="mdi mdi-chevron-left"></i>', '<i class="mdi mdi-chevron-right"></i>'],
-				nav: true,
-				dots: true,
-				// autoplay: true,
-				// autoplayTimeout: 3000,
-				// autoplayHoverPause: false,
-				callbacks: true,
-			});
+	$('.service-section .service-img-list').slick({
+		prevArrow: '.service-img .service-arrow span.lnr.lnr-chevron-left',
+		nextArrow: '.service-img .service-arrow span.lnr.lnr-chevron-right',
+		appendDots: $('.slide-controls'),
+		dotsClass: 'custom-dots',
+		dots: true,
+		customPaging: function (slider, i) {
+			//FYI just have a look at the object to find aviable information
+			//press f12 to access the console
+			//you could also debug or look in the source
+			console.log(slider);
+			var slideNumber = (i + 1),
+				totalSlides = slider.slideCount;
+			return '<a class="dot" role="button" title="' + slideNumber + ' of ' + totalSlides + '"><span class="string">' + slideNumber + '/' + totalSlides + '</span></a>';
 		}
-
 	});
 
 			// Page name breadcrumb
@@ -252,4 +245,86 @@ $(document).ready(function() {
 			$('#ccbreadcrumb').appendTo('.breadcrumb-wrap .container ');
 			// append form faq
 			$('.ccFaqForm ').appendTo('.support-page .send-mess ');
+
+
+
+
+});
+
+// Bg plugin
+function CanhCamResponsive() {
+	// Set BG Resposive
+	$('[bg-img]').each(function () {
+		var bgimg = $(this).attr('bg-img');
+		var pos = $(this).attr('bg-pos');
+		var size = $(this).attr('bg-size');
+		if (pos && pos.length > 0) {
+			$(this).css({
+				"background-position": pos
+			});
+		} else {
+			$(this).css({
+				"background-position": "center center"
+			});
+		}
+		if (size && size.length > 0) {
+			$(this).css({
+				"background-size": size
+			});
+		} else {
+			$(this).css({
+				"background-size": "cover"
+			});
+		}
+		$(this).css({
+			"background-image": "url(" + bgimg + ")"
 		});
+	});
+
+	$('[bg-img-responsive]').each(function () {
+		var bgimg = $(this).attr('bg-img-responsive');
+		var bgimgsm = $(this).attr('bg-img-responsive-sm');
+		var bgimgxs = $(this).attr('bg-img-responsive-xs');
+		if ($(window).width() >= 992) {
+			$(this).css({
+				"background-image": "url(" + bgimg + ")",
+				"background-position": "center center",
+				"background-size": "cover"
+			});
+		} else if ($(window).width() < 992 && $(window).width() > 768) {
+			$(this).css({
+				"background-image": "url(" + bgimgsm + ")",
+				"background-position": "center center",
+				"background-size": "cover"
+			});
+		} else {
+			$(this).css({
+				"background-image": "url(" + bgimgxs + ")",
+				"background-position": "center center",
+				"background-size": "cover"
+			});
+		}
+	});
+
+	$('[img-src-responsive]').each(function () {
+		var bgimg2 = $(this).attr('img-src-responsive');
+		var bgimg2sm = $(this).attr('img-src-responsive-sm');
+		var bgimg2xs = $(this).attr('img-src-responsive-xs');
+		if ($(window).width() >= 992) {
+			$(this).attr("src", "" + bgimg2 + "");
+		} else if ($(window).width() < 992 && $(window).width() > 768) {
+			$(this).attr("src", "" + bgimg2sm + "");
+		} else {
+			$(this).attr("src", "" + bgimg2xs + "");
+		}
+	});
+
+}
+
+$(function () {
+		CanhCamResponsive();
+});
+
+$(window).resize(function () {
+		CanhCamResponsive();
+});

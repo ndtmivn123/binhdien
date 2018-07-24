@@ -30,13 +30,19 @@ section.service-section
 							li Kinh doanh các dịch vụ quảng cáo: cho thuê mặt bằng tồ chức event, sampling, banner,..
 
 					.col-12.col-lg-6.col-xl-8
-						.service-img.owl-carousel.owl-theme
-							.box-img
-								img(src="img/service/img1.jpg", alt="")
-							.box-img
-								img(src="img/service/img1.jpg", alt="")
-							.box-img
-								img(src="img/service/img1.jpg", alt="")
+						.service-img
+							.service-img-list
+								.box-img
+									img(src="img/service/img1.jpg", alt="")
+								.box-img
+									img(src="img/service/img1.jpg", alt="")
+								.box-img
+									img(src="img/service/img1.jpg", alt="")
+							.service-arrow
+								.service-arrow-list
+									span.lnr.lnr-chevron-left.arrow
+									span.lnr.lnr-chevron-right.arrow
+							.slide-controls
 section.service-section.s2
 	.section-bg(style="background: url(img/service/bg.jpg) center center no-repeat;background-size: cover")
 	.container
@@ -59,14 +65,14 @@ section.service-section.s3
 						.col-12.col-md-6
 							a.service-col(href="#!")
 								figure
-									.service-img(style="background: url(img/service/1.jpg) center center no-repeat;background-size: cover")
+									.service-img(bg-img="img/service/1.jpg")
 										//- img(src="img/service/1.jpg", alt="")
 									figcaption
 										.service-name Cung cấp thực phẩm sơ chế
 						.col-12
 							a.service-col.big(href="#!")
 								figure
-									.service-img(style="background: url(img/service/2.jpg) center center no-repeat;background-size: cover")
+									.service-img(bg-img="img/service/2.jpg")
 										//- img(src="img/service/1.jpg", alt="")
 									figcaption
 										.service-name Cho thuê mặt bằng
@@ -75,14 +81,14 @@ section.service-section.s3
 						.col-12.col-md-6.col-lg-12
 							a.service-col.high(href="#!")
 								figure
-									.service-img(style="background: url(img/service/3.jpg) center center no-repeat;background-size: cover")
+									.service-img(bg-img="img/service/3.jpg")
 										//- img(src="img/service/1.jpg", alt="")
 									figcaption
 										.service-name Kinh doanh nông sản nhập khẩu
 						.col-12.col-md-6.col-lg-12
 							a.service-col(href="#!")
 								figure
-									.service-img(style="background: url(img/service/4.jpg) center center no-repeat;background-size: cover")
+									.service-img(bg-img="img/service/4.jpg")
 										//- img(src="img/service/1.jpg", alt="")
 									figcaption
 										.service-name Cho thuê vị trí quảng cáo

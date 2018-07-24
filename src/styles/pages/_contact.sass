@@ -7,7 +7,7 @@
 		max-width: 980px
 		margin: 0 auto
 		.contact-info
-			background: url(../img/contactbg.jpg) center center repeat
+			background: url(/Data/Sites/1/media/contactbg.jpg) center center repeat
 			width: 60%
 			padding: 30px 40px
 			.title
@@ -47,3 +47,29 @@
 				text-transform: uppercase
 				color: $blue
 				margin-bottom: 15px
+			.wrap-contact
+				.form-group
+					position: relative
+					label
+						display: none
+					> span
+						+pos(abs,0 20px null null)
+						color: $yellow
+						+lh(38px)
+					input[type="submit"]
+						// @extend .btn-primary
+						+fs(13rem)
+						color: $white
+						background: $blue
+						line-height: 40px
+						font-weight: 300
+						text-transform: uppercase
+						padding: 0px 50px
+						+bor-rad(5px)
+						border: none
+						&:hover, &:active, &:focus
+							background: $blue
+							border-color: $blue
+							box-shadow: 0 0 0 0.2rem color-rgba($blue,0.5)
+					textarea
+						height: 130px
