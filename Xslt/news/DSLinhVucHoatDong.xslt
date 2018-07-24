@@ -19,11 +19,11 @@
 					<xsl:apply-templates select="News" mode="ZoneNews2"></xsl:apply-templates>
 				</section>
 			</xsl:when>
-			<xsl:when test="position()=3">
+			<!-- <xsl:when test="position()=3">
 				<section class="service-section s3">
 					<xsl:apply-templates select="News" mode="ZoneNews3"></xsl:apply-templates>
 				</section>
-			</xsl:when>
+			</xsl:when> -->
 			<!-- <xsl:otherwise>
 
 				<xsl:if test="position()=4">
@@ -118,6 +118,6 @@
 			</div>
 		</div>
 	</xsl:template>
-	<xsl:template match="News" mode="ZoneNews3">
-	</xsl:template>
+	<!-- <xsl:template match="News" mode="ZoneNews3">
+	</xsl:template> -->
 </xsl:stylesheet>
