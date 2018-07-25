@@ -221,54 +221,22 @@ $(document).ready(function() {
 	//     forceSingleHighlight: true,
 	// });
 
-
-	// Cache selectors
-		// var lastId,
-		// topMenu = $(".top-nav"),
-		// topMenuHeight = topMenu.outerHeight() + $('header').outerHeight(),
-		// // All list items
-		// menuItems = topMenu.find("a"),
-		// allHeight = $('header').height() + $('.top-nav').height() + 30,
-		// // Anchors corresponding to menu items
-		// scrollItems = menuItems.map(function(){
-		// 	var item = $($(this).attr("href"));
-		// 	if (item.length) { return item; }
-		// });
-
-		// // Bind click handler to menu items
-		// // so we can get a fancy scroll animation
-		// menuItems.click(function(e){
-		// 	var href = $(this).attr("href"),
-		// 	offsetTop = href === "#" ? 0 : $(href).offset().top;
-		// 	$('html, body').stop().animate({
-		// 		scrollTop: offsetTop - allHeight
-		// 	}, 300);
-		// 	e.preventDefault();
-		// });
-
-		// // Bind to scroll
-		// $(window).scroll(function(){
-		// 	// Get container scroll position
-		// 	var fromTop = $(this).scrollTop()+topMenuHeight;
-
-		// 	// Get id of current scroll item
-		// 	var cur = scrollItems.map(function(){
-		// 	if ($(this).offset().top < fromTop)
-		// 		return this;
-		// 	});
-		// 	// Get the id of the current element
-		// 	cur = cur[cur.length-1];
-		// 	var id = cur && cur.length ? cur[0].id : "";
-
-		// 	if (lastId !== id) {
-		// 	lastId = id;
-		// 	// Set/remove active class -- This is the part.
-		// 	menuItems
-		// 		.parent().find('a').removeClass("active")
-		// 		.find('a').end().filter("[href='#"+id+"']").addClass("active");
-		// 	}
-		// });
-
+	$('.service-section .service-img-list').slick({
+		prevArrow: '.service-img .service-arrow span.lnr.lnr-chevron-left',
+		nextArrow: '.service-img .service-arrow span.lnr.lnr-chevron-right',
+		appendDots: $('.slide-controls'),
+		dotsClass: 'custom-dots',
+		dots: true,
+		customPaging: function (slider, i) {
+			//FYI just have a look at the object to find aviable information
+			//press f12 to access the console
+			//you could also debug or look in the source
+			console.log(slider);
+			var slideNumber = (i + 1),
+				totalSlides = slider.slideCount;
+			return '<a class="dot" role="button" title="' + slideNumber + ' of ' + totalSlides + '"><span class="string">' + slideNumber + '/' + totalSlides + '</span></a>';
+		}
+	});
 
 			// Page name breadcrumb
 
@@ -277,4 +245,86 @@ $(document).ready(function() {
 			$('#ccbreadcrumb').appendTo('.breadcrumb-wrap .container ');
 			// append form faq
 			$('.ccFaqForm ').appendTo('.support-page .send-mess ');
+
+
+
+
+});
+
+// Bg plugin
+function CanhCamResponsive() {
+	// Set BG Resposive
+	$('[bg-img]').each(function () {
+		var bgimg = $(this).attr('bg-img');
+		var pos = $(this).attr('bg-pos');
+		var size = $(this).attr('bg-size');
+		if (pos && pos.length > 0) {
+			$(this).css({
+				"background-position": pos
+			});
+		} else {
+			$(this).css({
+				"background-position": "center center"
+			});
+		}
+		if (size && size.length > 0) {
+			$(this).css({
+				"background-size": size
+			});
+		} else {
+			$(this).css({
+				"background-size": "cover"
+			});
+		}
+		$(this).css({
+			"background-image": "url(" + bgimg + ")"
 		});
+	});
+
+	$('[bg-img-responsive]').each(function () {
+		var bgimg = $(this).attr('bg-img-responsive');
+		var bgimgsm = $(this).attr('bg-img-responsive-sm');
+		var bgimgxs = $(this).attr('bg-img-responsive-xs');
+		if ($(window).width() >= 992) {
+			$(this).css({
+				"background-image": "url(" + bgimg + ")",
+				"background-position": "center center",
+				"background-size": "cover"
+			});
+		} else if ($(window).width() < 992 && $(window).width() > 768) {
+			$(this).css({
+				"background-image": "url(" + bgimgsm + ")",
+				"background-position": "center center",
+				"background-size": "cover"
+			});
+		} else {
+			$(this).css({
+				"background-image": "url(" + bgimgxs + ")",
+				"background-position": "center center",
+				"background-size": "cover"
+			});
+		}
+	});
+
+	$('[img-src-responsive]').each(function () {
+		var bgimg2 = $(this).attr('img-src-responsive');
+		var bgimg2sm = $(this).attr('img-src-responsive-sm');
+		var bgimg2xs = $(this).attr('img-src-responsive-xs');
+		if ($(window).width() >= 992) {
+			$(this).attr("src", "" + bgimg2 + "");
+		} else if ($(window).width() < 992 && $(window).width() > 768) {
+			$(this).attr("src", "" + bgimg2sm + "");
+		} else {
+			$(this).attr("src", "" + bgimg2xs + "");
+		}
+	});
+
+}
+
+$(function () {
+		CanhCamResponsive();
+});
+
+$(window).resize(function () {
+		CanhCamResponsive();
+});

@@ -30,7 +30,9 @@ gulp.task('concat-js', function() {
         "bower_components/scrollup/dist/jquery.scrollUp.js",
         "bower_components/parallax.js/parallax.js",
         "bower_components/responsive-tabs/js/jquery.responsiveTabs.js",
-        "bower_components/page-scroll-to-id/jquery.malihu.PageScroll2id.js"
+        "bower_components/page-scroll-to-id/jquery.malihu.PageScroll2id.js",
+        "bower_components/owl.carousel/dist/owl.carousel.min.js",
+        "bower_components/matchHeight/dist/jquery.matchHeight-min.js"
         ])
         .pipe(concat('core.js'))
         .pipe(gulp.dest('./dist/js'));
@@ -45,12 +47,15 @@ gulp.task('concat-css', function() {
         "bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css",
         "bower_components/hover/css/hover.css",
         "bower_components/animate.css/animate.css",
-        "bower_components/linearicons/icon-font.min.css",
+        "node_modules/linearicons/dist/web-font/style.css",
         "bower_components/slick-carousel/slick/slick.css",
         // "bower_components/slick-carousel/slick/slick-theme.css",
         "bower_components/k-flex/dist/css/k-flex.css",
         "bower_components/jquery-bar-rating/dist/themes/fontawesome-stars.css",
-        "bower_components/responsive-tabs/css/responsive-tabs.css"
+        "bower_components/responsive-tabs/css/responsive-tabs.css",
+        "node_modules/@mdi/font/css/materialdesignicons.min.css",
+        "bower_components/owl.carousel/dist/assets/owl.carousel.min.css",
+        "bower_components/owl.carousel/dist/assets/owl.theme.default.min.css"
         ])
         .pipe(concat('core.css'))
         .pipe(gulp.dest('./dist/css'));
