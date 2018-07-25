@@ -9282,8 +9282,6 @@ footer {
       padding: 0px 50px;
       border-radius: 5px;
       border: none; }
-    .contact-page .contact-wrap .form-group textarea {
-      min-height: 130px; }
     .contact-page .contact-wrap .contact-info {
       background: url(/Data/Sites/1/media/contactbg.jpg) center center repeat;
       width: 60%;
@@ -9334,32 +9332,34 @@ footer {
         text-transform: uppercase;
         color: #0a2653;
         margin-bottom: 15px; }
-      .contact-page .contact-wrap .contact-form .wrap-contact .form-group {
-        position: relative; }
-        .contact-page .contact-wrap .contact-form .wrap-contact .form-group label {
-          display: none; }
-        .contact-page .contact-wrap .contact-form .wrap-contact .form-group > span {
-          position: absolute;
-          top: 0;
-          right: 20px;
-          color: #fdb414;
-          line-height: 38px; }
-        .contact-page .contact-wrap .contact-form .wrap-contact .form-group input[type="submit"] {
-          font-size: 0.8125rem;
-          color: #fff;
+  .contact-page #ctl00_mainContent_ctl05_txtMessage {
+    min-height: 130px; }
+    .contact-page #ctl00_mainContent_ctl05_txtMessage .wrap-contact .form-group {
+      position: relative; }
+      .contact-page #ctl00_mainContent_ctl05_txtMessage .wrap-contact .form-group label {
+        display: none; }
+      .contact-page #ctl00_mainContent_ctl05_txtMessage .wrap-contact .form-group > span {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        color: #fdb414;
+        line-height: 38px; }
+      .contact-page #ctl00_mainContent_ctl05_txtMessage .wrap-contact .form-group input[type="submit"] {
+        font-size: 0.8125rem;
+        color: #fff;
+        background: #0a2653;
+        line-height: 40px;
+        font-weight: 300;
+        text-transform: uppercase;
+        padding: 0px 50px;
+        border-radius: 5px;
+        border: none; }
+        .contact-page #ctl00_mainContent_ctl05_txtMessage .wrap-contact .form-group input[type="submit"]:hover, .contact-page #ctl00_mainContent_ctl05_txtMessage .wrap-contact .form-group input[type="submit"]:active, .contact-page #ctl00_mainContent_ctl05_txtMessage .wrap-contact .form-group input[type="submit"]:focus {
           background: #0a2653;
-          line-height: 40px;
-          font-weight: 300;
-          text-transform: uppercase;
-          padding: 0px 50px;
-          border-radius: 5px;
-          border: none; }
-          .contact-page .contact-wrap .contact-form .wrap-contact .form-group input[type="submit"]:hover, .contact-page .contact-wrap .contact-form .wrap-contact .form-group input[type="submit"]:active, .contact-page .contact-wrap .contact-form .wrap-contact .form-group input[type="submit"]:focus {
-            background: #0a2653;
-            border-color: #0a2653;
-            box-shadow: 0 0 0 0.2rem rgba(10, 38, 83, 0.5); }
-        .contact-page .contact-wrap .contact-form .wrap-contact .form-group textarea {
-          height: 130px; }
+          border-color: #0a2653;
+          box-shadow: 0 0 0 0.2rem rgba(10, 38, 83, 0.5); }
+      .contact-page #ctl00_mainContent_ctl05_txtMessage .wrap-contact .form-group textarea {
+        height: 130px; }
 
 .partner-page {
   padding: 50px 0; }
