@@ -40,10 +40,10 @@
 						<xsl:value-of select="ImageUrl"></xsl:value-of>
 					</xsl:attribute>
 					<div class="alphabet">
-						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
 					</div>
 					<div class="cate-name">
-						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 					</div>
 				</a>
 			</div>
@@ -61,10 +61,11 @@
 						<xsl:value-of select="ImageUrl"></xsl:value-of>
 					</xsl:attribute>
 					<div class="alphabet">
-						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
+
 					</div>
 					<div class="cate-name">
-						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
 					</div>
 				</a>
 			</div>
@@ -90,10 +91,12 @@
 						<xsl:value-of select="ImageUrl"></xsl:value-of>
 					</xsl:attribute>
 					<div class="alphabet">
-						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
+
 					</div>
 					<div class="cate-name">
-						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+
 					</div>
 				</a>
 			</div>
@@ -111,10 +114,12 @@
 						<xsl:value-of select="ImageUrl"></xsl:value-of>
 					</xsl:attribute>
 					<div class="alphabet">
-						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
+
 					</div>
 					<div class="cate-name">
-						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+
 					</div>
 				</a>
 			</div>
@@ -136,10 +141,12 @@
 						<xsl:value-of select="ImageUrl"></xsl:value-of>
 					</xsl:attribute>
 					<div class="alphabet">
-						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
+
 					</div>
 					<div class="cate-name">
-						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+
 					</div>
 				</a>
 			</div>
@@ -157,10 +164,12 @@
 						<xsl:value-of select="ImageUrl"></xsl:value-of>
 					</xsl:attribute>
 					<div class="alphabet">
-						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="SubTitle" disable-output-escaping="yes"></xsl:value-of>
+
 					</div>
 					<div class="cate-name">
-						<xsl:value-of select="BriefContent" disable-output-escaping="yes"></xsl:value-of>
+						<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+
 					</div>
 				</a>
 			</div>

@@ -9183,6 +9183,29 @@ footer {
           .service-section .service-img .service-arrow .service-arrow-list span:first-child {
             margin-right: 0; } }
 
+.cate-description-nav .nav-tabs {
+  justify-content: inherit;
+  margin-bottom: 0; }
+  .cate-description-nav .nav-tabs li a {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    -webkit-transition: all, 0.3s;
+    -khtml-transition: all, 0.3s;
+    -moz-transition: all, 0.3s;
+    -ms-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s; }
+    .cate-description-nav .nav-tabs li a.active, .cate-description-nav .nav-tabs li a:hover {
+      background: #0a2653; }
+  .cate-description-nav .nav-tabs li + li a {
+    border: none; }
+
+.cate-tab-content .content {
+  padding: 1.5rem;
+  border: 1px solid #dbe3f0; }
+
 .news-page {
   padding: 50px 0;
   background: #fff; }
