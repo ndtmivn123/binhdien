@@ -7,7 +7,7 @@
 
 <portal:ZonesDisplaySettings runat="server"
 	ShowDescription="true"
-    DescriptionControlType="textarea"
+    DescriptionControlType="editor"
     ShowPrimaryImage="true"
     ShowSecondImage="false"
 	/>

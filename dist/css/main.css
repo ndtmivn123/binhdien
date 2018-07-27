@@ -8554,10 +8554,10 @@ footer {
 
 .home-about {
   padding: 70px 0;
-  background: #fff url(../img/hbg1.png) bottom left no-repeat;
+  background: #fff url(/Data/Sites/1/media/hbg1.png) bottom left no-repeat;
   background-size: 400px auto; }
   .home-about.s2 {
-    background: #fff url(../img/hbg4.png) bottom left no-repeat;
+    background: #fff url(/Data/Sites/1/media/hbg4.png) bottom left no-repeat;
     background-size: 400px auto; }
   .home-about .about-title {
     font-size: 3.75rem;
@@ -8577,7 +8577,7 @@ footer {
       .home-about .about-wrap {
         max-width: 800px; } }
   .home-about .about-intro {
-    background: url(../img/hbg2.jpg) center center no-repeat;
+    background: url(/Data/Sites/1/media/hbg2.jpg) center center no-repeat;
     background-size: cover;
     width: 720px;
     padding: 40px 150px;
@@ -8644,7 +8644,7 @@ footer {
     color: #fff; }
 
 .home-news {
-  background: url(../img/hbg3.jpg) center center repeat;
+  background: url(/Data/Sites/1/media/hbg3.jpg) center center repeat;
   padding: 70px 0; }
   .home-news .news-slick {
     overflow: hidden; }
@@ -8713,7 +8713,7 @@ footer {
         font-weight: 300; }
 
 .home-qc {
-  background: url(../img/hbg5.jpg) center center repeat;
+  background: url(/Data/Sites/1/media/hbg5.jpg) center center repeat;
   padding: 70px 0; }
   .home-qc .home-title {
     color: #fff; }

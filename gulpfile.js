@@ -32,7 +32,9 @@ gulp.task('concat-js', function() {
         "bower_components/responsive-tabs/js/jquery.responsiveTabs.js",
         "bower_components/page-scroll-to-id/jquery.malihu.PageScroll2id.js",
         "bower_components/owl.carousel/dist/owl.carousel.min.js",
-        "bower_components/matchHeight/dist/jquery.matchHeight-min.js"
+        "bower_components/matchHeight/dist/jquery.matchHeight-min.js",
+        "bower_components/lightgallery/dist/js/lightgallery-all.min.js"
+
         ])
         .pipe(concat('core.js'))
         .pipe(gulp.dest('./dist/js'));
@@ -55,7 +57,9 @@ gulp.task('concat-css', function() {
         "bower_components/responsive-tabs/css/responsive-tabs.css",
         "node_modules/@mdi/font/css/materialdesignicons.min.css",
         "bower_components/owl.carousel/dist/assets/owl.carousel.min.css",
-        "bower_components/owl.carousel/dist/assets/owl.theme.default.min.css"
+        "bower_components/owl.carousel/dist/assets/owl.theme.default.min.css",
+        "bower_components/lightgallery/dist/css/lightgallery.min.css",
+        "bower_components/lightgallery/dist/css/lg-transitions.min.css"
         ])
         .pipe(concat('core.css'))
         .pipe(gulp.dest('./dist/css'));

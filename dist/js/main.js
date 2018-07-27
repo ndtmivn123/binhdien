@@ -42,7 +42,7 @@ $(document).ready(function () {
 		arrows: false,
 		fade: true,
 		dots: false,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 5000,
 		infinite: false,
 		asNavFor: '.banner-nav'
@@ -53,7 +53,7 @@ $(document).ready(function () {
 		asNavFor: '.banner-slide',
 		dots: false,
 		arrows: false,
-		infinite: false,
+		infinite: true,
 		// centerMode: true,
 		focusOnSelect: true,
 		// centerPadding: 0,
@@ -238,6 +238,33 @@ $(document).ready(function () {
 	$('#ccbreadcrumb').appendTo('.breadcrumb-wrap .container ');
 	// append form faq
 	$('.ccFaqForm ').appendTo('.support-page .send-mess ');
+
+	// Video
+
+	// $(".home-about .about-wrap").lightGallery({
+	// 	youtubePlayerParams: {
+	// 		modestbranding: 1,
+	// 		showinfo: 0,
+	// 		rel: 0,
+	// 		controls: 0
+	// 	},
+	// 	width: '700px',
+	// 	height: '470px',
+	// 	mode: 'lg-fade',
+	// 	// addClass: 'home-about canhcam-video-fixed-size',
+	// 	counter: false,
+	// 	download: false,
+	// 	startClass: '',
+	// 	enableSwipe: false,
+	// 	enableDrag: false,
+	// 	speed: 500,
+	// 	loadYoutubeThumbnail: true,
+	// 	youtubeThumbSize: 'default',
+	// 	thumbnail: true,
+	// 	animateThumb: false,
+	// 	showThumbByDefault: false,
+	// 	selector: '.about-video'
+	// });
 });
 
 // Bg plugin
