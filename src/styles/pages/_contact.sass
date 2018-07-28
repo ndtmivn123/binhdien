@@ -65,35 +65,32 @@
 				text-transform: uppercase
 				color: $blue
 				margin-bottom: 15px
-<<<<<<< HEAD
 	#ctl00_mainContent_ctl05_txtMessage
 		min-height: 130px
-		
-=======
-			.wrap-contact
-				.form-group
-					position: relative
-					label
-						display: none
-					> span
-						+pos(abs,0 20px null null)
-						color: $yellow
-						+lh(38px)
-					input[type="submit"]
-						// @extend .btn-primary
-						+fs(13rem)
-						color: $white
+		.wrap-contact
+			.form-group
+				position: relative
+				label
+					display: none
+				> span
+					+pos(abs,0 20px null null)
+					color: $yellow
+					+lh(38px)
+				input[type="submit"]
+					// @extend .btn-primary
+					+fs(13rem)
+					color: $white
+					background: $blue
+					line-height: 40px
+					font-weight: 300
+					text-transform: uppercase
+					padding: 0px 50px
+					+bor-rad(5px)
+					border: none
+					&:hover, &:active, &:focus
 						background: $blue
-						line-height: 40px
-						font-weight: 300
-						text-transform: uppercase
-						padding: 0px 50px
-						+bor-rad(5px)
-						border: none
-						&:hover, &:active, &:focus
-							background: $blue
-							border-color: $blue
-							box-shadow: 0 0 0 0.2rem color-rgba($blue,0.5)
-					textarea
-						height: 130px
->>>>>>> ff274bc47d176af71aa7ac38ce425d6d534218f1
+						border-color: $blue
+						box-shadow: 0 0 0 0.2rem color-rgba($blue,0.5)
+				textarea
+					height: 130px
+
