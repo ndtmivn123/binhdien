@@ -284,3 +284,24 @@
 							right: 0
 						&:first-child
 							margin-right: 0
+
+
+.cate-description-nav
+	.nav-tabs
+		justify-content: inherit
+		margin-bottom: 0
+		li
+			a
+				+pad( 1rem 2rem)
+				+transition(all, 0.3s)
+				&.active,&:hover
+					background: $blue
+			+ li
+				a
+					border: none
+
+
+.cate-tab-content
+	.content
+		+pad(1.5rem)
+		border: 1px solid $bluebg

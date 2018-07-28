@@ -8554,10 +8554,10 @@ footer {
 
 .home-about {
   padding: 70px 0;
-  background: #fff url(../img/hbg1.png) bottom left no-repeat;
+  background: #fff url(/Data/Sites/1/media/hbg1.png) bottom left no-repeat;
   background-size: 400px auto; }
   .home-about.s2 {
-    background: #fff url(../img/hbg4.png) bottom left no-repeat;
+    background: #fff url(/Data/Sites/1/media/hbg4.png) bottom left no-repeat;
     background-size: 400px auto; }
   .home-about .about-title {
     font-size: 3.75rem;
@@ -8577,7 +8577,7 @@ footer {
       .home-about .about-wrap {
         max-width: 800px; } }
   .home-about .about-intro {
-    background: url(../img/hbg2.jpg) center center no-repeat;
+    background: url(/Data/Sites/1/media/hbg2.jpg) center center no-repeat;
     background-size: cover;
     width: 720px;
     padding: 40px 150px;
@@ -8644,7 +8644,7 @@ footer {
     color: #fff; }
 
 .home-news {
-  background: url(../img/hbg3.jpg) center center repeat;
+  background: url(/Data/Sites/1/media/hbg3.jpg) center center repeat;
   padding: 70px 0; }
   .home-news .news-slick {
     overflow: hidden; }
@@ -8713,7 +8713,7 @@ footer {
         font-weight: 300; }
 
 .home-qc {
-  background: url(../img/hbg5.jpg) center center repeat;
+  background: url(/Data/Sites/1/media/hbg5.jpg) center center repeat;
   padding: 70px 0; }
   .home-qc .home-title {
     color: #fff; }
@@ -9182,6 +9182,29 @@ footer {
             right: 0; }
           .service-section .service-img .service-arrow .service-arrow-list span:first-child {
             margin-right: 0; } }
+
+.cate-description-nav .nav-tabs {
+  justify-content: inherit;
+  margin-bottom: 0; }
+  .cate-description-nav .nav-tabs li a {
+    padding-top: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    -webkit-transition: all, 0.3s;
+    -khtml-transition: all, 0.3s;
+    -moz-transition: all, 0.3s;
+    -ms-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s; }
+    .cate-description-nav .nav-tabs li a.active, .cate-description-nav .nav-tabs li a:hover {
+      background: #0a2653; }
+  .cate-description-nav .nav-tabs li + li a {
+    border: none; }
+
+.cate-tab-content .content {
+  padding: 1.5rem;
+  border: 1px solid #dbe3f0; }
 
 .news-page {
   padding: 50px 0;

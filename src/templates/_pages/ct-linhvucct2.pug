@@ -71,16 +71,16 @@ section.service-section
 							td Số lượng ô(vựa) :
 							td 288
 						tr
-							td Diện tích khuôn viên: 
+							td Diện tích khuôn viên:
 							td 27.768 m<sup>2</sup>
 						tr
-							td Sản lượng bình quân : 
+							td Sản lượng bình quân :
 							td khoảng 700 tấn/ ngày đêm
 						tr
-							td Doanh thu bình quân : 
+							td Doanh thu bình quân :
 							td thu khoảng 43 tỷ đồng
 						tr
-							td Hình thức kinh doanh: 
+							td Hình thức kinh doanh:
 							td Cho thuê ô vựa
 						tr
 							td Thời gian:
@@ -89,73 +89,84 @@ section.service-section
 							td Liên hệ:
 							td Qua điện thoại hoặc trên website
 		.cate-description
-			.description-title Thông tin nhà lồng:
-			.content
-				p 
-					strong Giá thuê ô (vựa) :
-					br
-					|Dài hạn: 50 năm: 
-					br
-					|Đối với diện chính sách :  ngắn hạn: 
-					br
-					|Vui lòng  liên hệ trực tiếp để biết thông tin cụ thể- (Không cunng cấp trên website)
-				p
-					strong Thời gian thuê và Phương thức thanh toán :
-					br
-					|+ Dài hạn: Thời gian cho thuê ô (vựa) là 50 năm theo quyết định của UBND Tp.HCM.
-					br
-					|+ Ngắn hạn: 01 năm và được tiếp tục tái ký Hợp đồng khi có nhu cầu. 
-					br
-					|Vui lòng  liên hệ trực tiếp để biết thông tin cụ thể- (Không cunng cấp trên website)
-				p Mỗi ô vựa có diện tích từ 38-45 m², chuyên doanh thủy hải sản (tôm, cua, cá biển, cá đồng...) và hải sản phụ (nghêu, sò, ốc…) tại nhà lồng D với tổng diện tích 10.000 m². Toàn bộ các ô vựa mới này vừa được cải tạo, nâng cấp và được phân khu một cách khoa học, rộng rãi.
-				p Việc đưa vào hoạt động các ô vựa mới này là minh chứng cho sự phát triển lớn mạnh không ngừng của ngành thủy hải sản - ngành hàng chủ đạo tại chợ Bình Điền, chiếm hơn 70% thị phần thủy hải sản của TP HCM. Các ô vựa này, cùng với khu vực D1, D2 chuyên doanh cá đồng, tôm và hải sản phụ với sản lượng bình quân là 450 tấn/ngày đêm, dự báo sản lượng kinh doanh của nhà lồng D nói chung sẽ tiếp tục nâng cao trong thời gian tới.
-			.description-table
-				table
-					thead
-						tr
-							th.text-center.text-uppercase.bluebg(colspan="6") bảng giá mặt hàng tại chợ từ ngày 08/01/2017 - 30/01/2017
-						tr
-							th.greybg Mặt hàng
-							th.greybg Quy cách
-							th.greybg Giá
-								span (1.000đ/kg)
-							th.greybg Mặt hàng
-							th.greybg Quy cách
-							th.greybg Giá
-								span (1.000đ/kg)
-					tbody
-						tr
-							td Ghẹ
-							td 100 - 130g/con
-							td 240 - 260
-							td Tôm hùm bông sống
-							td >= 1kg/con
-							td 2.200
-						tr
-							td Ghẹ
-							td 100 - 130g/con
-							td 240 - 260
-							td Tôm hùm bông sống
-							td >= 1kg/con
-							td 2.200
-						tr
-							td Ghẹ
-							td 100 - 130g/con
-							td 240 - 260
-							td Tôm hùm bông sống
-							td >= 1kg/con
-							td 2.200
-						tr
-							td Ghẹ
-							td 100 - 130g/con
-							td 240 - 260
-							td Tôm hùm bông sống
-							td >= 1kg/con
-							td 2.200
-						tr
-							td Ghẹ
-							td 100 - 130g/con
-							td 240 - 260
-							td Tôm hùm bông sống
-							td >= 1kg/con
-							td 2.200
+			nav.cate-description-nav
+				ul#myTab.nav.nav-tabs(role='tablist')
+					li
+						a#item-tab-1.active(data-toggle='tab', href='#item-1', role='tab', aria-controls='item-1', aria-selected='true') Home
+					li
+						a#item-tab-2(data-toggle='tab', href='#item-2', role='tab', aria-controls='item-2', aria-selected='false') Profile
+					li
+						a#item-tab-2(data-toggle='tab', href='#item-3', role='tab', aria-controls='item-3', aria-selected='false') Contact
+			#bdTabContent.tab-content.cate-tab-content
+				#item-1.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='item-tab-1')
+					.content
+						p
+							strong Giá thuê ô (vựa) :
+							br
+							|Dài hạn: 50 năm:
+							br
+							|Đối với diện chính sách :  ngắn hạn:
+							br
+							|Vui lòng  liên hệ trực tiếp để biết thông tin cụ thể- (Không cunng cấp trên website)
+						p
+							strong Thời gian thuê và Phương thức thanh toán :
+							br
+							|+ Dài hạn: Thời gian cho thuê ô (vựa) là 50 năm theo quyết định của UBND Tp.HCM.
+							br
+							|+ Ngắn hạn: 01 năm và được tiếp tục tái ký Hợp đồng khi có nhu cầu.
+							br
+							|Vui lòng  liên hệ trực tiếp để biết thông tin cụ thể- (Không cunng cấp trên website)
+						p Mỗi ô vựa có diện tích từ 38-45 m², chuyên doanh thủy hải sản (tôm, cua, cá biển, cá đồng...) và hải sản phụ (nghêu, sò, ốc…) tại nhà lồng D với tổng diện tích 10.000 m². Toàn bộ các ô vựa mới này vừa được cải tạo, nâng cấp và được phân khu một cách khoa học, rộng rãi.
+						p Việc đưa vào hoạt động các ô vựa mới này là minh chứng cho sự phát triển lớn mạnh không ngừng của ngành thủy hải sản - ngành hàng chủ đạo tại chợ Bình Điền, chiếm hơn 70% thị phần thủy hải sản của TP HCM. Các ô vựa này, cùng với khu vực D1, D2 chuyên doanh cá đồng, tôm và hải sản phụ với sản lượng bình quân là 450 tấn/ngày đêm, dự báo sản lượng kinh doanh của nhà lồng D nói chung sẽ tiếp tục nâng cao trong thời gian tới.
+						.description-table
+							table
+								thead
+									tr
+										th.text-center.text-uppercase.bluebg(colspan="6") bảng giá mặt hàng tại chợ từ ngày 08/01/2017 - 30/01/2017
+									tr
+										th.greybg Mặt hàng
+										th.greybg Quy cách
+										th.greybg Giá
+											span (1.000đ/kg)
+										th.greybg Mặt hàng
+										th.greybg Quy cách
+										th.greybg Giá
+											span (1.000đ/kg)
+								tbody
+									tr
+										td Ghẹ
+										td 100 - 130g/con
+										td 240 - 260
+										td Tôm hùm bông sống
+										td >= 1kg/con
+										td 2.200
+									tr
+										td Ghẹ
+										td 100 - 130g/con
+										td 240 - 260
+										td Tôm hùm bông sống
+										td >= 1kg/con
+										td 2.200
+									tr
+										td Ghẹ
+										td 100 - 130g/con
+										td 240 - 260
+										td Tôm hùm bông sống
+										td >= 1kg/con
+										td 2.200
+									tr
+										td Ghẹ
+										td 100 - 130g/con
+										td 240 - 260
+										td Tôm hùm bông sống
+										td >= 1kg/con
+										td 2.200
+									tr
+										td Ghẹ
+										td 100 - 130g/con
+										td 240 - 260
+										td Tôm hùm bông sống
+										td >= 1kg/con
+										td 2.200
+				#item-2.tab-pane.fade(role='tabpanel', aria-labelledby='item-tab-2') ...
+				#item-3.tab-pane.fade(role='tabpanel', aria-labelledby='item-tab-3') ...
