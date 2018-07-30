@@ -40,7 +40,7 @@
 			color: $main !important
 
 // FORM INIT
-.form-wrap
+.form-wrap,.wrap-form
 	.form-group
 		margin-bottom: 10px
 		input, textarea
@@ -69,12 +69,14 @@
 		font-weight: 300
 		text-transform: uppercase
 		padding: 0px 50px
-		+bor-rad(5px)
+		+bor-rad(0)
 		border: none
 		&:hover, &:active, &:focus
 			background: $blue
 			border-color: $blue
 			box-shadow: 0 0 0 0.2rem color-rgba($blue,0.5)
+	input[type="reset"]
+		display: none
 // FORM COMPONENTS
 
 .checkbox

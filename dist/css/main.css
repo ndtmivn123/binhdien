@@ -1250,7 +1250,7 @@ pre {
   .table-responsive > .table-bordered {
     border: 0; }
 
-.form-control, .form-wrap .form-group input, .form-wrap .form-group textarea, .send-mess .form-group input, .send-mess .form-group textarea {
+.form-control, .form-wrap .form-group input, .form-wrap .form-group textarea, .wrap-form .form-group input, .wrap-form .form-group textarea, .send-mess .form-group input, .send-mess .form-group textarea {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -1263,21 +1263,21 @@ pre {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; }
   @media screen and (prefers-reduced-motion: reduce) {
-    .form-control, .form-wrap .form-group input, .form-wrap .form-group textarea, .send-mess .form-group input, .send-mess .form-group textarea {
+    .form-control, .form-wrap .form-group input, .form-wrap .form-group textarea, .wrap-form .form-group input, .wrap-form .form-group textarea, .send-mess .form-group input, .send-mess .form-group textarea {
       transition: none; } }
-  .form-control::-ms-expand, .form-wrap .form-group input::-ms-expand, .form-wrap .form-group textarea::-ms-expand, .send-mess .form-group input::-ms-expand, .send-mess .form-group textarea::-ms-expand {
+  .form-control::-ms-expand, .form-wrap .form-group input::-ms-expand, .form-wrap .form-group textarea::-ms-expand, .wrap-form .form-group input::-ms-expand, .wrap-form .form-group textarea::-ms-expand, .send-mess .form-group input::-ms-expand, .send-mess .form-group textarea::-ms-expand {
     background-color: transparent;
     border: 0; }
-  .form-control:focus, .form-wrap .form-group input:focus, .form-wrap .form-group textarea:focus, .send-mess .form-group input:focus, .send-mess .form-group textarea:focus {
+  .form-control:focus, .form-wrap .form-group input:focus, .form-wrap .form-group textarea:focus, .wrap-form .form-group input:focus, .wrap-form .form-group textarea:focus, .send-mess .form-group input:focus, .send-mess .form-group textarea:focus {
     color: #495057;
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25); }
-  .form-control::placeholder, .form-wrap .form-group input::placeholder, .form-wrap .form-group textarea::placeholder, .send-mess .form-group input::placeholder, .send-mess .form-group textarea::placeholder {
+  .form-control::placeholder, .form-wrap .form-group input::placeholder, .form-wrap .form-group textarea::placeholder, .wrap-form .form-group input::placeholder, .wrap-form .form-group textarea::placeholder, .send-mess .form-group input::placeholder, .send-mess .form-group textarea::placeholder {
     color: #6c757d;
     opacity: 1; }
-  .form-control:disabled, .form-wrap .form-group input:disabled, .form-wrap .form-group textarea:disabled, .send-mess .form-group input:disabled, .send-mess .form-group textarea:disabled, .form-control[readonly], .form-wrap .form-group input[readonly], .form-wrap .form-group textarea[readonly], .send-mess .form-group input[readonly], .send-mess .form-group textarea[readonly] {
+  .form-control:disabled, .form-wrap .form-group input:disabled, .form-wrap .form-group textarea:disabled, .wrap-form .form-group input:disabled, .wrap-form .form-group textarea:disabled, .send-mess .form-group input:disabled, .send-mess .form-group textarea:disabled, .form-control[readonly], .form-wrap .form-group input[readonly], .form-wrap .form-group textarea[readonly], .wrap-form .form-group input[readonly], .wrap-form .form-group textarea[readonly], .send-mess .form-group input[readonly], .send-mess .form-group textarea[readonly] {
     background-color: #e9ecef;
     opacity: 1; }
 
@@ -1323,11 +1323,11 @@ select.form-control:focus::-ms-value {
   background-color: transparent;
   border: solid transparent;
   border-width: 1px 0; }
-  .form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, .form-wrap .form-group .input-group-sm > input.form-control-plaintext, .form-wrap .form-group .input-group-sm > textarea.form-control-plaintext, .send-mess .form-group .input-group-sm > input.form-control-plaintext, .send-mess .form-group .input-group-sm > textarea.form-control-plaintext,
+  .form-control-plaintext.form-control-sm, .input-group-sm > .form-control-plaintext.form-control, .form-wrap .form-group .input-group-sm > input.form-control-plaintext, .form-wrap .form-group .input-group-sm > textarea.form-control-plaintext, .wrap-form .form-group .input-group-sm > input.form-control-plaintext, .wrap-form .form-group .input-group-sm > textarea.form-control-plaintext, .send-mess .form-group .input-group-sm > input.form-control-plaintext, .send-mess .form-group .input-group-sm > textarea.form-control-plaintext,
   .input-group-sm > .input-group-prepend > .form-control-plaintext.input-group-text,
   .input-group-sm > .input-group-append > .form-control-plaintext.input-group-text,
   .input-group-sm > .input-group-prepend > .form-control-plaintext.btn,
-  .input-group-sm > .input-group-append > .form-control-plaintext.btn, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .form-wrap .form-group .input-group-lg > input.form-control-plaintext, .form-wrap .form-group .input-group-lg > textarea.form-control-plaintext, .send-mess .form-group .input-group-lg > input.form-control-plaintext, .send-mess .form-group .input-group-lg > textarea.form-control-plaintext,
+  .input-group-sm > .input-group-append > .form-control-plaintext.btn, .form-control-plaintext.form-control-lg, .input-group-lg > .form-control-plaintext.form-control, .form-wrap .form-group .input-group-lg > input.form-control-plaintext, .form-wrap .form-group .input-group-lg > textarea.form-control-plaintext, .wrap-form .form-group .input-group-lg > input.form-control-plaintext, .wrap-form .form-group .input-group-lg > textarea.form-control-plaintext, .send-mess .form-group .input-group-lg > input.form-control-plaintext, .send-mess .form-group .input-group-lg > textarea.form-control-plaintext,
   .input-group-lg > .input-group-prepend > .form-control-plaintext.input-group-text,
   .input-group-lg > .input-group-append > .form-control-plaintext.input-group-text,
   .input-group-lg > .input-group-prepend > .form-control-plaintext.btn,
@@ -1335,7 +1335,7 @@ select.form-control:focus::-ms-value {
     padding-right: 0;
     padding-left: 0; }
 
-.form-control-sm, .input-group-sm > .form-control, .form-wrap .form-group .input-group-sm > input, .form-wrap .form-group .input-group-sm > textarea, .send-mess .form-group .input-group-sm > input, .send-mess .form-group .input-group-sm > textarea,
+.form-control-sm, .input-group-sm > .form-control, .form-wrap .form-group .input-group-sm > input, .form-wrap .form-group .input-group-sm > textarea, .wrap-form .form-group .input-group-sm > input, .wrap-form .form-group .input-group-sm > textarea, .send-mess .form-group .input-group-sm > input, .send-mess .form-group .input-group-sm > textarea,
 .input-group-sm > .input-group-prepend > .input-group-text,
 .input-group-sm > .input-group-append > .input-group-text,
 .input-group-sm > .input-group-prepend > .btn,
@@ -1352,7 +1352,7 @@ select.form-control-sm:not([size]):not([multiple]), .input-group-sm > select.for
 .input-group-sm > .input-group-append > select.btn:not([size]):not([multiple]) {
   height: calc(1.8125rem + 2px); }
 
-.form-control-lg, .input-group-lg > .form-control, .form-wrap .form-group .input-group-lg > input, .form-wrap .form-group .input-group-lg > textarea, .send-mess .form-group .input-group-lg > input, .send-mess .form-group .input-group-lg > textarea,
+.form-control-lg, .input-group-lg > .form-control, .form-wrap .form-group .input-group-lg > input, .form-wrap .form-group .input-group-lg > textarea, .wrap-form .form-group .input-group-lg > input, .wrap-form .form-group .input-group-lg > textarea, .send-mess .form-group .input-group-lg > input, .send-mess .form-group .input-group-lg > textarea,
 .input-group-lg > .input-group-prepend > .input-group-text,
 .input-group-lg > .input-group-append > .input-group-text,
 .input-group-lg > .input-group-prepend > .btn,
@@ -1433,28 +1433,34 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: rgba(40, 167, 69, 0.8);
   border-radius: .2rem; }
 
-.was-validated .form-control:valid, .was-validated .form-wrap .form-group input:valid, .form-wrap .form-group .was-validated input:valid, .was-validated .form-wrap .form-group textarea:valid, .form-wrap .form-group .was-validated textarea:valid, .was-validated .send-mess .form-group input:valid, .send-mess .form-group .was-validated input:valid, .was-validated .send-mess .form-group textarea:valid, .send-mess .form-group .was-validated textarea:valid, .form-control.is-valid, .form-wrap .form-group input.is-valid, .form-wrap .form-group textarea.is-valid, .send-mess .form-group input.is-valid, .send-mess .form-group textarea.is-valid, .was-validated
+.was-validated .form-control:valid, .was-validated .form-wrap .form-group input:valid, .form-wrap .form-group .was-validated input:valid, .was-validated .form-wrap .form-group textarea:valid, .form-wrap .form-group .was-validated textarea:valid, .was-validated .wrap-form .form-group input:valid, .wrap-form .form-group .was-validated input:valid, .was-validated .wrap-form .form-group textarea:valid, .wrap-form .form-group .was-validated textarea:valid, .was-validated .send-mess .form-group input:valid, .send-mess .form-group .was-validated input:valid, .was-validated .send-mess .form-group textarea:valid, .send-mess .form-group .was-validated textarea:valid, .form-control.is-valid, .form-wrap .form-group input.is-valid, .form-wrap .form-group textarea.is-valid, .wrap-form .form-group input.is-valid, .wrap-form .form-group textarea.is-valid, .send-mess .form-group input.is-valid, .send-mess .form-group textarea.is-valid, .was-validated
 .custom-select:valid,
 .custom-select.is-valid {
   border-color: #28a745; }
-  .was-validated .form-control:valid:focus, .was-validated .form-wrap .form-group input:valid:focus, .form-wrap .form-group .was-validated input:valid:focus, .was-validated .form-wrap .form-group textarea:valid:focus, .form-wrap .form-group .was-validated textarea:valid:focus, .was-validated .send-mess .form-group input:valid:focus, .send-mess .form-group .was-validated input:valid:focus, .was-validated .send-mess .form-group textarea:valid:focus, .send-mess .form-group .was-validated textarea:valid:focus, .form-control.is-valid:focus, .form-wrap .form-group input.is-valid:focus, .form-wrap .form-group textarea.is-valid:focus, .send-mess .form-group input.is-valid:focus, .send-mess .form-group textarea.is-valid:focus, .was-validated
+  .was-validated .form-control:valid:focus, .was-validated .form-wrap .form-group input:valid:focus, .form-wrap .form-group .was-validated input:valid:focus, .was-validated .form-wrap .form-group textarea:valid:focus, .form-wrap .form-group .was-validated textarea:valid:focus, .was-validated .wrap-form .form-group input:valid:focus, .wrap-form .form-group .was-validated input:valid:focus, .was-validated .wrap-form .form-group textarea:valid:focus, .wrap-form .form-group .was-validated textarea:valid:focus, .was-validated .send-mess .form-group input:valid:focus, .send-mess .form-group .was-validated input:valid:focus, .was-validated .send-mess .form-group textarea:valid:focus, .send-mess .form-group .was-validated textarea:valid:focus, .form-control.is-valid:focus, .form-wrap .form-group input.is-valid:focus, .form-wrap .form-group textarea.is-valid:focus, .wrap-form .form-group input.is-valid:focus, .wrap-form .form-group textarea.is-valid:focus, .send-mess .form-group input.is-valid:focus, .send-mess .form-group textarea.is-valid:focus, .was-validated
   .custom-select:valid:focus,
   .custom-select.is-valid:focus {
     border-color: #28a745;
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25); }
-  .was-validated .form-control:valid ~ .valid-feedback, .was-validated .form-wrap .form-group input:valid ~ .valid-feedback, .form-wrap .form-group .was-validated input:valid ~ .valid-feedback, .was-validated .form-wrap .form-group textarea:valid ~ .valid-feedback, .form-wrap .form-group .was-validated textarea:valid ~ .valid-feedback, .was-validated .send-mess .form-group input:valid ~ .valid-feedback, .send-mess .form-group .was-validated input:valid ~ .valid-feedback, .was-validated .send-mess .form-group textarea:valid ~ .valid-feedback, .send-mess .form-group .was-validated textarea:valid ~ .valid-feedback,
+  .was-validated .form-control:valid ~ .valid-feedback, .was-validated .form-wrap .form-group input:valid ~ .valid-feedback, .form-wrap .form-group .was-validated input:valid ~ .valid-feedback, .was-validated .form-wrap .form-group textarea:valid ~ .valid-feedback, .form-wrap .form-group .was-validated textarea:valid ~ .valid-feedback, .was-validated .wrap-form .form-group input:valid ~ .valid-feedback, .wrap-form .form-group .was-validated input:valid ~ .valid-feedback, .was-validated .wrap-form .form-group textarea:valid ~ .valid-feedback, .wrap-form .form-group .was-validated textarea:valid ~ .valid-feedback, .was-validated .send-mess .form-group input:valid ~ .valid-feedback, .send-mess .form-group .was-validated input:valid ~ .valid-feedback, .was-validated .send-mess .form-group textarea:valid ~ .valid-feedback, .send-mess .form-group .was-validated textarea:valid ~ .valid-feedback,
   .was-validated .form-control:valid ~ .valid-tooltip,
   .was-validated .form-wrap .form-group input:valid ~ .valid-tooltip,
   .form-wrap .form-group .was-validated input:valid ~ .valid-tooltip,
   .was-validated .form-wrap .form-group textarea:valid ~ .valid-tooltip,
   .form-wrap .form-group .was-validated textarea:valid ~ .valid-tooltip,
+  .was-validated .wrap-form .form-group input:valid ~ .valid-tooltip,
+  .wrap-form .form-group .was-validated input:valid ~ .valid-tooltip,
+  .was-validated .wrap-form .form-group textarea:valid ~ .valid-tooltip,
+  .wrap-form .form-group .was-validated textarea:valid ~ .valid-tooltip,
   .was-validated .send-mess .form-group input:valid ~ .valid-tooltip,
   .send-mess .form-group .was-validated input:valid ~ .valid-tooltip,
   .was-validated .send-mess .form-group textarea:valid ~ .valid-tooltip,
-  .send-mess .form-group .was-validated textarea:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, .form-wrap .form-group input.is-valid ~ .valid-feedback, .form-wrap .form-group textarea.is-valid ~ .valid-feedback, .send-mess .form-group input.is-valid ~ .valid-feedback, .send-mess .form-group textarea.is-valid ~ .valid-feedback,
+  .send-mess .form-group .was-validated textarea:valid ~ .valid-tooltip, .form-control.is-valid ~ .valid-feedback, .form-wrap .form-group input.is-valid ~ .valid-feedback, .form-wrap .form-group textarea.is-valid ~ .valid-feedback, .wrap-form .form-group input.is-valid ~ .valid-feedback, .wrap-form .form-group textarea.is-valid ~ .valid-feedback, .send-mess .form-group input.is-valid ~ .valid-feedback, .send-mess .form-group textarea.is-valid ~ .valid-feedback,
   .form-control.is-valid ~ .valid-tooltip,
   .form-wrap .form-group input.is-valid ~ .valid-tooltip,
   .form-wrap .form-group textarea.is-valid ~ .valid-tooltip,
+  .wrap-form .form-group input.is-valid ~ .valid-tooltip,
+  .wrap-form .form-group textarea.is-valid ~ .valid-tooltip,
   .send-mess .form-group input.is-valid ~ .valid-tooltip,
   .send-mess .form-group textarea.is-valid ~ .valid-tooltip, .was-validated
   .custom-select:valid ~ .valid-feedback,
@@ -1527,28 +1533,34 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   background-color: rgba(220, 53, 69, 0.8);
   border-radius: .2rem; }
 
-.was-validated .form-control:invalid, .was-validated .form-wrap .form-group input:invalid, .form-wrap .form-group .was-validated input:invalid, .was-validated .form-wrap .form-group textarea:invalid, .form-wrap .form-group .was-validated textarea:invalid, .was-validated .send-mess .form-group input:invalid, .send-mess .form-group .was-validated input:invalid, .was-validated .send-mess .form-group textarea:invalid, .send-mess .form-group .was-validated textarea:invalid, .form-control.is-invalid, .form-wrap .form-group input.is-invalid, .form-wrap .form-group textarea.is-invalid, .send-mess .form-group input.is-invalid, .send-mess .form-group textarea.is-invalid, .was-validated
+.was-validated .form-control:invalid, .was-validated .form-wrap .form-group input:invalid, .form-wrap .form-group .was-validated input:invalid, .was-validated .form-wrap .form-group textarea:invalid, .form-wrap .form-group .was-validated textarea:invalid, .was-validated .wrap-form .form-group input:invalid, .wrap-form .form-group .was-validated input:invalid, .was-validated .wrap-form .form-group textarea:invalid, .wrap-form .form-group .was-validated textarea:invalid, .was-validated .send-mess .form-group input:invalid, .send-mess .form-group .was-validated input:invalid, .was-validated .send-mess .form-group textarea:invalid, .send-mess .form-group .was-validated textarea:invalid, .form-control.is-invalid, .form-wrap .form-group input.is-invalid, .form-wrap .form-group textarea.is-invalid, .wrap-form .form-group input.is-invalid, .wrap-form .form-group textarea.is-invalid, .send-mess .form-group input.is-invalid, .send-mess .form-group textarea.is-invalid, .was-validated
 .custom-select:invalid,
 .custom-select.is-invalid {
   border-color: #dc3545; }
-  .was-validated .form-control:invalid:focus, .was-validated .form-wrap .form-group input:invalid:focus, .form-wrap .form-group .was-validated input:invalid:focus, .was-validated .form-wrap .form-group textarea:invalid:focus, .form-wrap .form-group .was-validated textarea:invalid:focus, .was-validated .send-mess .form-group input:invalid:focus, .send-mess .form-group .was-validated input:invalid:focus, .was-validated .send-mess .form-group textarea:invalid:focus, .send-mess .form-group .was-validated textarea:invalid:focus, .form-control.is-invalid:focus, .form-wrap .form-group input.is-invalid:focus, .form-wrap .form-group textarea.is-invalid:focus, .send-mess .form-group input.is-invalid:focus, .send-mess .form-group textarea.is-invalid:focus, .was-validated
+  .was-validated .form-control:invalid:focus, .was-validated .form-wrap .form-group input:invalid:focus, .form-wrap .form-group .was-validated input:invalid:focus, .was-validated .form-wrap .form-group textarea:invalid:focus, .form-wrap .form-group .was-validated textarea:invalid:focus, .was-validated .wrap-form .form-group input:invalid:focus, .wrap-form .form-group .was-validated input:invalid:focus, .was-validated .wrap-form .form-group textarea:invalid:focus, .wrap-form .form-group .was-validated textarea:invalid:focus, .was-validated .send-mess .form-group input:invalid:focus, .send-mess .form-group .was-validated input:invalid:focus, .was-validated .send-mess .form-group textarea:invalid:focus, .send-mess .form-group .was-validated textarea:invalid:focus, .form-control.is-invalid:focus, .form-wrap .form-group input.is-invalid:focus, .form-wrap .form-group textarea.is-invalid:focus, .wrap-form .form-group input.is-invalid:focus, .wrap-form .form-group textarea.is-invalid:focus, .send-mess .form-group input.is-invalid:focus, .send-mess .form-group textarea.is-invalid:focus, .was-validated
   .custom-select:invalid:focus,
   .custom-select.is-invalid:focus {
     border-color: #dc3545;
     box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); }
-  .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .form-wrap .form-group input:invalid ~ .invalid-feedback, .form-wrap .form-group .was-validated input:invalid ~ .invalid-feedback, .was-validated .form-wrap .form-group textarea:invalid ~ .invalid-feedback, .form-wrap .form-group .was-validated textarea:invalid ~ .invalid-feedback, .was-validated .send-mess .form-group input:invalid ~ .invalid-feedback, .send-mess .form-group .was-validated input:invalid ~ .invalid-feedback, .was-validated .send-mess .form-group textarea:invalid ~ .invalid-feedback, .send-mess .form-group .was-validated textarea:invalid ~ .invalid-feedback,
+  .was-validated .form-control:invalid ~ .invalid-feedback, .was-validated .form-wrap .form-group input:invalid ~ .invalid-feedback, .form-wrap .form-group .was-validated input:invalid ~ .invalid-feedback, .was-validated .form-wrap .form-group textarea:invalid ~ .invalid-feedback, .form-wrap .form-group .was-validated textarea:invalid ~ .invalid-feedback, .was-validated .wrap-form .form-group input:invalid ~ .invalid-feedback, .wrap-form .form-group .was-validated input:invalid ~ .invalid-feedback, .was-validated .wrap-form .form-group textarea:invalid ~ .invalid-feedback, .wrap-form .form-group .was-validated textarea:invalid ~ .invalid-feedback, .was-validated .send-mess .form-group input:invalid ~ .invalid-feedback, .send-mess .form-group .was-validated input:invalid ~ .invalid-feedback, .was-validated .send-mess .form-group textarea:invalid ~ .invalid-feedback, .send-mess .form-group .was-validated textarea:invalid ~ .invalid-feedback,
   .was-validated .form-control:invalid ~ .invalid-tooltip,
   .was-validated .form-wrap .form-group input:invalid ~ .invalid-tooltip,
   .form-wrap .form-group .was-validated input:invalid ~ .invalid-tooltip,
   .was-validated .form-wrap .form-group textarea:invalid ~ .invalid-tooltip,
   .form-wrap .form-group .was-validated textarea:invalid ~ .invalid-tooltip,
+  .was-validated .wrap-form .form-group input:invalid ~ .invalid-tooltip,
+  .wrap-form .form-group .was-validated input:invalid ~ .invalid-tooltip,
+  .was-validated .wrap-form .form-group textarea:invalid ~ .invalid-tooltip,
+  .wrap-form .form-group .was-validated textarea:invalid ~ .invalid-tooltip,
   .was-validated .send-mess .form-group input:invalid ~ .invalid-tooltip,
   .send-mess .form-group .was-validated input:invalid ~ .invalid-tooltip,
   .was-validated .send-mess .form-group textarea:invalid ~ .invalid-tooltip,
-  .send-mess .form-group .was-validated textarea:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .form-wrap .form-group input.is-invalid ~ .invalid-feedback, .form-wrap .form-group textarea.is-invalid ~ .invalid-feedback, .send-mess .form-group input.is-invalid ~ .invalid-feedback, .send-mess .form-group textarea.is-invalid ~ .invalid-feedback,
+  .send-mess .form-group .was-validated textarea:invalid ~ .invalid-tooltip, .form-control.is-invalid ~ .invalid-feedback, .form-wrap .form-group input.is-invalid ~ .invalid-feedback, .form-wrap .form-group textarea.is-invalid ~ .invalid-feedback, .wrap-form .form-group input.is-invalid ~ .invalid-feedback, .wrap-form .form-group textarea.is-invalid ~ .invalid-feedback, .send-mess .form-group input.is-invalid ~ .invalid-feedback, .send-mess .form-group textarea.is-invalid ~ .invalid-feedback,
   .form-control.is-invalid ~ .invalid-tooltip,
   .form-wrap .form-group input.is-invalid ~ .invalid-tooltip,
   .form-wrap .form-group textarea.is-invalid ~ .invalid-tooltip,
+  .wrap-form .form-group input.is-invalid ~ .invalid-tooltip,
+  .wrap-form .form-group textarea.is-invalid ~ .invalid-tooltip,
   .send-mess .form-group input.is-invalid ~ .invalid-tooltip,
   .send-mess .form-group textarea.is-invalid ~ .invalid-tooltip, .was-validated
   .custom-select:invalid ~ .invalid-feedback,
@@ -1618,7 +1630,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
       flex-flow: row wrap;
       align-items: center;
       margin-bottom: 0; }
-    .form-inline .form-control, .form-inline .form-wrap .form-group input, .form-wrap .form-group .form-inline input, .form-inline .form-wrap .form-group textarea, .form-wrap .form-group .form-inline textarea, .form-inline .send-mess .form-group input, .send-mess .form-group .form-inline input, .form-inline .send-mess .form-group textarea, .send-mess .form-group .form-inline textarea {
+    .form-inline .form-control, .form-inline .form-wrap .form-group input, .form-wrap .form-group .form-inline input, .form-inline .form-wrap .form-group textarea, .form-wrap .form-group .form-inline textarea, .form-inline .wrap-form .form-group input, .wrap-form .form-group .form-inline input, .form-inline .wrap-form .form-group textarea, .wrap-form .form-group .form-inline textarea, .form-inline .send-mess .form-group input, .send-mess .form-group .form-inline input, .form-inline .send-mess .form-group textarea, .send-mess .form-group .form-inline textarea {
       display: inline-block;
       width: auto;
       vertical-align: middle; }
@@ -1676,29 +1688,31 @@ a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none; }
 
-.btn-primary, .form-wrap input[type="submit"] {
+.btn-primary, .form-wrap input[type="submit"], .wrap-form input[type="submit"] {
   color: #fff;
   background-color: #007bff;
   border-color: #007bff; }
-  .btn-primary:hover, .form-wrap input:hover[type="submit"] {
+  .btn-primary:hover, .form-wrap input:hover[type="submit"], .wrap-form input:hover[type="submit"] {
     color: #fff;
     background-color: #0069d9;
     border-color: #0062cc; }
-  .btn-primary:focus, .form-wrap input:focus[type="submit"], .btn-primary.focus, .form-wrap input.focus[type="submit"] {
+  .btn-primary:focus, .form-wrap input:focus[type="submit"], .wrap-form input:focus[type="submit"], .btn-primary.focus, .form-wrap input.focus[type="submit"], .wrap-form input.focus[type="submit"] {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
-  .btn-primary.disabled, .form-wrap input.disabled[type="submit"], .btn-primary:disabled, .form-wrap input:disabled[type="submit"] {
+  .btn-primary.disabled, .form-wrap input.disabled[type="submit"], .wrap-form input.disabled[type="submit"], .btn-primary:disabled, .form-wrap input:disabled[type="submit"], .wrap-form input:disabled[type="submit"] {
     color: #fff;
     background-color: #007bff;
     border-color: #007bff; }
-  .btn-primary:not(:disabled):not(.disabled):active, .form-wrap input:not(:disabled):not(.disabled):active[type="submit"], .btn-primary:not(:disabled):not(.disabled).active, .form-wrap input:not(:disabled):not(.disabled).active[type="submit"],
+  .btn-primary:not(:disabled):not(.disabled):active, .form-wrap input:not(:disabled):not(.disabled):active[type="submit"], .wrap-form input:not(:disabled):not(.disabled):active[type="submit"], .btn-primary:not(:disabled):not(.disabled).active, .form-wrap input:not(:disabled):not(.disabled).active[type="submit"], .wrap-form input:not(:disabled):not(.disabled).active[type="submit"],
   .show > .btn-primary.dropdown-toggle,
-  .form-wrap .show > input.dropdown-toggle[type="submit"] {
+  .form-wrap .show > input.dropdown-toggle[type="submit"],
+  .wrap-form .show > input.dropdown-toggle[type="submit"] {
     color: #fff;
     background-color: #0062cc;
     border-color: #005cbf; }
-    .btn-primary:not(:disabled):not(.disabled):active:focus, .form-wrap input:not(:disabled):not(.disabled):active:focus[type="submit"], .btn-primary:not(:disabled):not(.disabled).active:focus, .form-wrap input:not(:disabled):not(.disabled).active:focus[type="submit"],
+    .btn-primary:not(:disabled):not(.disabled):active:focus, .form-wrap input:not(:disabled):not(.disabled):active:focus[type="submit"], .wrap-form input:not(:disabled):not(.disabled):active:focus[type="submit"], .btn-primary:not(:disabled):not(.disabled).active:focus, .form-wrap input:not(:disabled):not(.disabled).active:focus[type="submit"], .wrap-form input:not(:disabled):not(.disabled).active:focus[type="submit"],
     .show > .btn-primary.dropdown-toggle:focus,
-    .form-wrap .show > input.dropdown-toggle:focus[type="submit"] {
+    .form-wrap .show > input.dropdown-toggle:focus[type="submit"],
+    .wrap-form .show > input.dropdown-toggle:focus[type="submit"] {
       box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
 
 .btn-secondary {
@@ -2384,27 +2398,33 @@ input[type="button"].btn-block {
   flex-wrap: wrap;
   align-items: stretch;
   width: 100%; }
-  .input-group > .form-control, .form-wrap .form-group .input-group > input, .form-wrap .form-group .input-group > textarea, .send-mess .form-group .input-group > input, .send-mess .form-group .input-group > textarea,
+  .input-group > .form-control, .form-wrap .form-group .input-group > input, .form-wrap .form-group .input-group > textarea, .wrap-form .form-group .input-group > input, .wrap-form .form-group .input-group > textarea, .send-mess .form-group .input-group > input, .send-mess .form-group .input-group > textarea,
   .input-group > .custom-select,
   .input-group > .custom-file {
     position: relative;
     flex: 1 1 auto;
     width: 1%;
     margin-bottom: 0; }
-    .input-group > .form-control + .form-control, .form-wrap .form-group .input-group > input + .form-control, .form-wrap .form-group .input-group > textarea + .form-control, .send-mess .form-group .input-group > input + .form-control, .send-mess .form-group .input-group > textarea + .form-control, .form-wrap .form-group .input-group > .form-control + input, .form-wrap .form-group .input-group > input + input, .form-wrap .form-group .input-group > textarea + input, .form-wrap .form-group .input-group > .form-control + textarea, .form-wrap .form-group .input-group > input + textarea, .form-wrap .form-group .input-group > textarea + textarea, .send-mess .form-group .input-group > .form-control + input, .send-mess .form-group .input-group > input + input, .send-mess .form-group .input-group > textarea + input, .send-mess .form-group .input-group > .form-control + textarea, .send-mess .form-group .input-group > input + textarea, .send-mess .form-group .input-group > textarea + textarea,
+    .input-group > .form-control + .form-control, .form-wrap .form-group .input-group > input + .form-control, .form-wrap .form-group .input-group > textarea + .form-control, .wrap-form .form-group .input-group > input + .form-control, .wrap-form .form-group .input-group > textarea + .form-control, .send-mess .form-group .input-group > input + .form-control, .send-mess .form-group .input-group > textarea + .form-control, .form-wrap .form-group .input-group > .form-control + input, .form-wrap .form-group .input-group > input + input, .form-wrap .form-group .input-group > textarea + input, .form-wrap .form-group .input-group > .form-control + textarea, .form-wrap .form-group .input-group > input + textarea, .form-wrap .form-group .input-group > textarea + textarea, .wrap-form .form-group .input-group > .form-control + input, .wrap-form .form-group .input-group > input + input, .wrap-form .form-group .input-group > textarea + input, .wrap-form .form-group .input-group > .form-control + textarea, .wrap-form .form-group .input-group > input + textarea, .wrap-form .form-group .input-group > textarea + textarea, .send-mess .form-group .input-group > .form-control + input, .send-mess .form-group .input-group > input + input, .send-mess .form-group .input-group > textarea + input, .send-mess .form-group .input-group > .form-control + textarea, .send-mess .form-group .input-group > input + textarea, .send-mess .form-group .input-group > textarea + textarea,
     .input-group > .form-control + .custom-select,
     .form-wrap .form-group .input-group > input + .custom-select,
     .form-wrap .form-group .input-group > textarea + .custom-select,
+    .wrap-form .form-group .input-group > input + .custom-select,
+    .wrap-form .form-group .input-group > textarea + .custom-select,
     .send-mess .form-group .input-group > input + .custom-select,
     .send-mess .form-group .input-group > textarea + .custom-select,
     .input-group > .form-control + .custom-file,
     .form-wrap .form-group .input-group > input + .custom-file,
     .form-wrap .form-group .input-group > textarea + .custom-file,
+    .wrap-form .form-group .input-group > input + .custom-file,
+    .wrap-form .form-group .input-group > textarea + .custom-file,
     .send-mess .form-group .input-group > input + .custom-file,
     .send-mess .form-group .input-group > textarea + .custom-file,
     .input-group > .custom-select + .form-control,
     .form-wrap .form-group .input-group > .custom-select + input,
     .form-wrap .form-group .input-group > .custom-select + textarea,
+    .wrap-form .form-group .input-group > .custom-select + input,
+    .wrap-form .form-group .input-group > .custom-select + textarea,
     .send-mess .form-group .input-group > .custom-select + input,
     .send-mess .form-group .input-group > .custom-select + textarea,
     .input-group > .custom-select + .custom-select,
@@ -2412,20 +2432,22 @@ input[type="button"].btn-block {
     .input-group > .custom-file + .form-control,
     .form-wrap .form-group .input-group > .custom-file + input,
     .form-wrap .form-group .input-group > .custom-file + textarea,
+    .wrap-form .form-group .input-group > .custom-file + input,
+    .wrap-form .form-group .input-group > .custom-file + textarea,
     .send-mess .form-group .input-group > .custom-file + input,
     .send-mess .form-group .input-group > .custom-file + textarea,
     .input-group > .custom-file + .custom-select,
     .input-group > .custom-file + .custom-file {
       margin-left: -1px; }
-  .input-group > .form-control:focus, .form-wrap .form-group .input-group > input:focus, .form-wrap .form-group .input-group > textarea:focus, .send-mess .form-group .input-group > input:focus, .send-mess .form-group .input-group > textarea:focus,
+  .input-group > .form-control:focus, .form-wrap .form-group .input-group > input:focus, .form-wrap .form-group .input-group > textarea:focus, .wrap-form .form-group .input-group > input:focus, .wrap-form .form-group .input-group > textarea:focus, .send-mess .form-group .input-group > input:focus, .send-mess .form-group .input-group > textarea:focus,
   .input-group > .custom-select:focus,
   .input-group > .custom-file .custom-file-input:focus ~ .custom-file-label {
     z-index: 3; }
-  .input-group > .form-control:not(:last-child), .form-wrap .form-group .input-group > input:not(:last-child), .form-wrap .form-group .input-group > textarea:not(:last-child), .send-mess .form-group .input-group > input:not(:last-child), .send-mess .form-group .input-group > textarea:not(:last-child),
+  .input-group > .form-control:not(:last-child), .form-wrap .form-group .input-group > input:not(:last-child), .form-wrap .form-group .input-group > textarea:not(:last-child), .wrap-form .form-group .input-group > input:not(:last-child), .wrap-form .form-group .input-group > textarea:not(:last-child), .send-mess .form-group .input-group > input:not(:last-child), .send-mess .form-group .input-group > textarea:not(:last-child),
   .input-group > .custom-select:not(:last-child) {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0; }
-  .input-group > .form-control:not(:first-child), .form-wrap .form-group .input-group > input:not(:first-child), .form-wrap .form-group .input-group > textarea:not(:first-child), .send-mess .form-group .input-group > input:not(:first-child), .send-mess .form-group .input-group > textarea:not(:first-child),
+  .input-group > .form-control:not(:first-child), .form-wrap .form-group .input-group > input:not(:first-child), .form-wrap .form-group .input-group > textarea:not(:first-child), .wrap-form .form-group .input-group > input:not(:first-child), .wrap-form .form-group .input-group > textarea:not(:first-child), .send-mess .form-group .input-group > input:not(:first-child), .send-mess .form-group .input-group > textarea:not(:first-child),
   .input-group > .custom-select:not(:first-child) {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
@@ -7486,7 +7508,7 @@ input[type="reset"] {
 
 .btn {
   display: inline-block; }
-  .btn.btn-primary, .form-wrap input.btn[type="submit"] {
+  .btn.btn-primary, .form-wrap input.btn[type="submit"], .wrap-form input.btn[type="submit"] {
     background: #fdb414;
     color: #333333;
     text-transform: uppercase;
@@ -7497,23 +7519,23 @@ input[type="reset"] {
     font-weight: 300;
     border-radius: 5px; }
     @media (max-width: 1199.98px) {
-      .btn.btn-primary, .form-wrap input.btn[type="submit"] {
+      .btn.btn-primary, .form-wrap input.btn[type="submit"], .wrap-form input.btn[type="submit"] {
         line-height: 40px;
         font-size: 1rem;
         padding: 0px 30px; } }
-    .btn.btn-primary:after, .form-wrap input.btn[type="submit"]:after {
+    .btn.btn-primary:after, .form-wrap input.btn[type="submit"]:after, .wrap-form input.btn[type="submit"]:after {
       content: '\e87a';
       font-family: 'Linearicons-Free';
       margin-left: 15px; }
-    .btn.btn-primary:active, .form-wrap input.btn:active[type="submit"], .btn.btn-primary:focus, .form-wrap input.btn:focus[type="submit"] {
+    .btn.btn-primary:active, .form-wrap input.btn:active[type="submit"], .wrap-form input.btn:active[type="submit"], .btn.btn-primary:focus, .form-wrap input.btn:focus[type="submit"], .wrap-form input.btn:focus[type="submit"] {
       box-shadow: 0 0 0 0.2rem rgba(253, 180, 20, 0.5) !important;
       border-color: #fdb414 !important;
       background: #dc9802 !important;
       color: #333333 !important; }
 
-.form-wrap .form-group {
+.form-wrap .form-group, .wrap-form .form-group {
   margin-bottom: 10px; }
-  .form-wrap .form-group input, .form-wrap .form-group textarea {
+  .form-wrap .form-group input, .form-wrap .form-group textarea, .wrap-form .form-group input, .wrap-form .form-group textarea {
     width: 100%;
     border-radius: 5px;
     line-height: 20px;
@@ -7523,13 +7545,13 @@ input[type="reset"] {
     padding: 0.625rem 1.25rem;
     border: 1px solid #e6e6e6;
     font-family: 'montserrat', sans-serif; }
-    .form-wrap .form-group input:active, .form-wrap .form-group input:focus, .form-wrap .form-group textarea:active, .form-wrap .form-group textarea:focus {
+    .form-wrap .form-group input:active, .form-wrap .form-group input:focus, .form-wrap .form-group textarea:active, .form-wrap .form-group textarea:focus, .wrap-form .form-group input:active, .wrap-form .form-group input:focus, .wrap-form .form-group textarea:active, .wrap-form .form-group textarea:focus {
       border-color: #0a2653;
       box-shadow: 0 0 0 0.2rem rgba(10, 38, 83, 0.5); }
-  .form-wrap .form-group textarea {
+  .form-wrap .form-group textarea, .wrap-form .form-group textarea {
     min-height: 130px; }
 
-.form-wrap input[type="submit"] {
+.form-wrap input[type="submit"], .wrap-form input[type="submit"] {
   font-size: 0.8125rem;
   color: #fff;
   background: #0a2653;
@@ -7537,12 +7559,15 @@ input[type="reset"] {
   font-weight: 300;
   text-transform: uppercase;
   padding: 0px 50px;
-  border-radius: 5px;
+  border-radius: 0;
   border: none; }
-  .form-wrap input[type="submit"]:hover, .form-wrap input[type="submit"]:active, .form-wrap input[type="submit"]:focus {
+  .form-wrap input[type="submit"]:hover, .form-wrap input[type="submit"]:active, .form-wrap input[type="submit"]:focus, .wrap-form input[type="submit"]:hover, .wrap-form input[type="submit"]:active, .wrap-form input[type="submit"]:focus {
     background: #0a2653;
     border-color: #0a2653;
     box-shadow: 0 0 0 0.2rem rgba(10, 38, 83, 0.5); }
+
+.form-wrap input[type="reset"], .wrap-form input[type="reset"] {
+  display: none; }
 
 .checkbox input {
   display: none; }
@@ -9329,8 +9354,9 @@ footer {
       font-weight: 300;
       text-transform: uppercase;
       padding: 0px 50px;
-      border-radius: 5px;
-      border: none; }
+      border-radius: 0;
+      border: none;
+      width: auto; }
     .contact-page .contact-wrap .contact-info {
       background: url(/Data/Sites/1/media/contactbg.jpg) center center repeat;
       width: 60%;
