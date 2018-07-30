@@ -41,10 +41,12 @@ gulp.task('concat-js', function() {
 });
 gulp.task('concat-css', function() {
     return gulp.src([
-        "node_modules/@fortawesome/fontawesome-free/css/brands.min.css",
-        "node_modules/@fortawesome/fontawesome-free/css/regular.min.css",
-        "node_modules/@fortawesome/fontawesome-free/css/solid.min.css",
-        "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css",
+        // "node_modules/@fortawesome/fontawesome-free/css/brands.min.css",
+        // "node_modules/@fortawesome/fontawesome-free/css/regular.min.css",
+        // "node_modules/@fortawesome/fontawesome-free/css/solid.min.css",
+        // "node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css",
+        // "bower_components/font-awesome-sass/assets/stylesheets/_font-awesome.scss",
+        "node_modules/font-awesome/css/font-awesome.css",
         "bower_components/fancybox/dist/jquery.fancybox.css",
         "bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.css",
         "bower_components/hover/css/hover.css",
@@ -82,7 +84,7 @@ gulp.task('sass', function() {
     return gulp.src('src/styles/main.sass')
         .pipe(sourcemaps.init())
         .pipe(gulpSass().on('error', gulpSass.logError))
-        .pipe(sourcemaps.write('./'))
+        // .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.stream());
 });

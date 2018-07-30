@@ -34,6 +34,10 @@
 	&.s2
 		background: $white url(/Data/Sites/1/media/hbg4.png) bottom left no-repeat
 		background-size: 400px auto
+		.content
+			figure
+				figcaption
+					color: $main
 	.about-title
 		+fs(60rem)
 		line-height: 1
@@ -69,6 +73,8 @@
 				height: 1px
 				background: $blue
 				margin-bottom: 15px
+			p
+				color: $main
 	.about-video, .about-img
 		width: 720px
 		float: right
@@ -168,6 +174,7 @@
 						padding-left: 15px
 						+fs(14rem)
 						font-weight: 300
+						color: $main
 .home-qc
 	background: url(/Data/Sites/1/media/hbg5.jpg) center center repeat
 	padding: 70px 0
@@ -230,10 +237,12 @@
 			left: 0
 			&:before
 				content: '\f104'
+				font-family: 'FontAwesome'
 		.slick-next
 			right: 0
 			&:before
 				content: '\f105'
+				font-family: 'FontAwesome'
 		.slick-list
 			margin: 0px -10px
 		.item

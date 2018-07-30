@@ -13,7 +13,10 @@
 					</ul>
 
 				</div>
-				<xsl:apply-templates select="/ZoneList/Zone" mode="Content"></xsl:apply-templates>
+				<div class="tab-content" id="myTabContent">
+					<xsl:apply-templates select="/ZoneList/Zone" mode="Content"></xsl:apply-templates>
+				</div>
+
 			</div>
 		</section>
 	</xsl:template>
@@ -51,37 +54,36 @@
 		</li>
 	</xsl:template>
 	<xsl:template match="Zone" mode="Content">
-		<div class="tab-content" id="myTabContent">
-			<div class="tab-pane fade">
-				<xsl:if test="position()=1">
-					<xsl:attribute name="class">
-						<xsl:text>show active</xsl:text>
-					</xsl:attribute>
-				</xsl:if>
-				<xsl:attribute name="id">
-					<xsl:text>itemnews-</xsl:text>
-					<xsl:value-of select="position()"></xsl:value-of>
+		<div class="tab-pane fade">
+			<xsl:if test="position()=1">
+				<xsl:attribute name="class">
+					<xsl:text>tab-pane fade show active</xsl:text>
 				</xsl:attribute>
-				<xsl:attribute name="role">
-					<xsl:text>tab</xsl:text>
-				</xsl:attribute>
-				<xsl:attribute name="aria-labelledby">
-					<xsl:text>itemnews-tab-</xsl:text>
-					<xsl:value-of select="position()"></xsl:value-of>
-				</xsl:attribute>
-				<div class="news-list news-slick">
-					<xsl:apply-templates select="News"></xsl:apply-templates>
-				</div>
-				<div class="btn-wrap text-center">
-					<a class="btn-viewmore" href="#!">
-						<xsl:attribute name="href">
-							<xsl:value-of select="Url"></xsl:value-of>
-						</xsl:attribute>
-						<xsl:value-of select="/ZoneList/ViewMoreText" /></a>
-				</div>
+			</xsl:if>
+			<xsl:attribute name="id">
+				<xsl:text>itemnews-</xsl:text>
+				<xsl:value-of select="position()"></xsl:value-of>
+			</xsl:attribute>
+			<xsl:attribute name="role">
+				<xsl:text>tab</xsl:text>
+			</xsl:attribute>
+			<xsl:attribute name="aria-labelledby">
+				<xsl:text>itemnews-tab-</xsl:text>
+				<xsl:value-of select="position()"></xsl:value-of>
+			</xsl:attribute>
+			<div class="news-list news-slick">
+				<xsl:apply-templates select="News"></xsl:apply-templates>
 			</div>
-
+			<div class="btn-wrap text-center">
+				<a class="btn-viewmore" href="#!">
+					<xsl:attribute name="href">
+						<xsl:value-of select="Url"></xsl:value-of>
+					</xsl:attribute>
+					<xsl:value-of select="/ZoneList/ViewMoreText" />
+				</a>
+			</div>
 		</div>
+
 
 	</xsl:template>
 	<xsl:template match="News">
