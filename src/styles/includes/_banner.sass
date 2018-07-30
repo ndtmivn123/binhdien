@@ -8,7 +8,7 @@
 					width: 100%
 					+media-breakpoint-down(md)
 						height: 500px
-						object-fit: cover
+						object-fit: covercover
 					+media-breakpoint-down(sm)
 						height: 350px
 				&:before
@@ -23,7 +23,7 @@
 					background: linear-gradient(color-rgba($black,0),color-rgba($black,1))
 					opacity: 60%
 	.banner-nav
-		+pos(abs, null 0 0 0)
+		+pos(abs, null 0 5px 0)
 		.slick-list
 			overflow: visible
 		.slick-track
@@ -36,7 +36,7 @@
 				color: $white
 				padding: 5px 20px 15px
 				height: 100%
-				border: 5px solid transparent
+				// border: 5px solid transparent
 				+transition(all,0.5s)
 				+pos(rel,null)
 				+media-breakpoint-down(md)
@@ -56,6 +56,9 @@
 					opacity: 0
 					margin-bottom: -5px
 					+transition(all,0.5s)
+				&:hover
+					box-shadow: inset 0 0 0 5px blue
+					transition: all .5s ease-in-out
 				&.cate1
 					background: color-rgba(#a71b48,0.8)
 					&:before

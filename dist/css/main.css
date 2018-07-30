@@ -8085,7 +8085,7 @@ header {
   .banner-wrap .banner-nav {
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 5px;
     left: 0; }
     .banner-wrap .banner-nav .slick-list {
       overflow: visible; }
