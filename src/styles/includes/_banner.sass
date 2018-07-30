@@ -43,50 +43,68 @@
 					padding: 5px 10px 15px
 				+media-breakpoint-down(sm)
 					width: 250px
-				&:before
+				&:after
+					content: ""
+					position: absolute
+					width: 0
+					height: 0
+					/* margin-left: -1em; */
+					bottom: 8.8rem
+					left: 42%
+					box-sizing: border-box
+					border: 1em solid black
+					transform-origin: 0 0
+					transform: rotate(360deg)
+					// opacity: 0
+
+					
+				&:hover
 					content: ''
-					display: block
+					position: absolute
 					width: 0
 					height: 0
 					border: 20px solid transparent
 					border-top: none
 					+pos(abs, null null 100% 50%)
-					+transform(translateX(-50%))
+					+transform(translateY(-50%))
 					visibility: hidden
 					opacity: 0
 					margin-bottom: -5px
 					+transition(all,0.5s)
-				&:hover
+					padding: 5px 20px 15px
+				&:hover	
 					box-shadow: inset 0 0 0 5px blue
 					transition: all .5s ease-in-out
+				// 	background-position: bottom center
+					// opacity: 1
 				&.cate1
 					background: color-rgba(#a71b48,0.8)
-					&:before
-						border-bottom-color: #a71b48
+					&:after
+						border-color: transparent transparent color-rgba(#a71b48,0.8)
 				&.cate2
 					background: color-rgba(#e9380e,0.8)
-					&:before
-						border-bottom-color: #e9380e
+					&:after
+						border-color: transparent transparent color-rgba(#e9380e,0.8)
 				&.cate3
 					background: color-rgba(#ff6600,0.8)
-					&:before
-						border-bottom-color: #ff6600
+					&:after
+						border-color: transparent transparent color-rgba(#ff6600,0.8)
 				&.cate4
 					background: color-rgba(#f19e00,0.8)
-					&:before
-						border-bottom-color: #f19e00
+					&:after
+						border-color: transparent transparent color-rgba(#f19e00,0.8)
 				&.cate5
 					background: color-rgba(#8cb928,0.8)
-					&:before
-						border-bottom-color: #8cb928
+					&:after
+						border-color: transparent transparent color-rgba(#8cb928,0.8)
 				&.cate6
 					background: color-rgba(#459a83,0.8)
-					&:before
-						border-bottom-color: #459a83
+					&:after
+						border-color: transparent transparent color-rgba(#459a83,0.8)
 				&.cate7
 					background: color-rgba(#2278b3,0.8)
-					&:before
-						border-bottom-color: #2278b3
+					&:after
+						border-color: transparent transparent color-rgba(#2278b3,0.8)
 				.alphabet
 					+fs(80rem)
 					line-height: 1
@@ -112,7 +130,7 @@
 					&.cate3
 						border-color: #ff6600
 					&.cate4
-						border-color: #f19e00
+						border-color: color-rgba(#f19e00,0.8)
 					&.cate5
 						border-color: #8cb928
 					&.cate6

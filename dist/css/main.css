@@ -8061,7 +8061,7 @@ header {
       @media (max-width: 991.98px) {
         .banner-wrap .banner-slide .item .banner-img img {
           height: 500px;
-          object-fit: cover; } }
+          object-fit: covercover; } }
       @media (max-width: 767.98px) {
         .banner-wrap .banner-slide .item .banner-img img {
           height: 350px; } }
@@ -8103,7 +8103,6 @@ header {
         color: #fff;
         padding: 5px 20px 15px;
         height: 100%;
-        border: 5px solid transparent;
         -webkit-transition: all, 0.5s;
         -khtml-transition: all, 0.5s;
         -moz-transition: all, 0.5s;
@@ -8117,9 +8116,21 @@ header {
         @media (max-width: 767.98px) {
           .banner-wrap .banner-nav .item .cate {
             width: 250px; } }
-        .banner-wrap .banner-nav .item .cate:before {
+        .banner-wrap .banner-nav .item .cate:after {
+          content: "";
+          position: absolute;
+          width: 0;
+          height: 0;
+          /* margin-left: -1em; */
+          bottom: 8.8rem;
+          left: 42%;
+          box-sizing: border-box;
+          border: 1em solid black;
+          transform-origin: 0 0;
+          transform: rotate(360deg); }
+        .banner-wrap .banner-nav .item .cate:hover {
           content: '';
-          display: block;
+          position: absolute;
           width: 0;
           height: 0;
           border: 20px solid transparent;
@@ -8127,12 +8138,12 @@ header {
           position: absolute;
           bottom: 100%;
           left: 50%;
-          -webkit-transform: translateX(-50%);
-          -khtml-transform: translateX(-50%);
-          -moz-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-          -o-transform: translateX(-50%);
-          transform: translateX(-50%);
+          -webkit-transform: translateY(-50%);
+          -khtml-transform: translateY(-50%);
+          -moz-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          -o-transform: translateY(-50%);
+          transform: translateY(-50%);
           visibility: hidden;
           opacity: 0;
           margin-bottom: -5px;
@@ -8141,35 +8152,39 @@ header {
           -moz-transition: all, 0.5s;
           -ms-transition: all, 0.5s;
           -o-transition: all, 0.5s;
-          transition: all, 0.5s; }
+          transition: all, 0.5s;
+          padding: 5px 20px 15px; }
+        .banner-wrap .banner-nav .item .cate:hover {
+          box-shadow: inset 0 0 0 5px blue;
+          transition: all .5s ease-in-out; }
         .banner-wrap .banner-nav .item .cate.cate1 {
           background: rgba(167, 27, 72, 0.8); }
-          .banner-wrap .banner-nav .item .cate.cate1:before {
-            border-bottom-color: #a71b48; }
+          .banner-wrap .banner-nav .item .cate.cate1:after {
+            border-color: transparent transparent rgba(167, 27, 72, 0.8); }
         .banner-wrap .banner-nav .item .cate.cate2 {
           background: rgba(233, 56, 14, 0.8); }
-          .banner-wrap .banner-nav .item .cate.cate2:before {
-            border-bottom-color: #e9380e; }
+          .banner-wrap .banner-nav .item .cate.cate2:after {
+            border-color: transparent transparent rgba(233, 56, 14, 0.8); }
         .banner-wrap .banner-nav .item .cate.cate3 {
           background: rgba(255, 102, 0, 0.8); }
-          .banner-wrap .banner-nav .item .cate.cate3:before {
-            border-bottom-color: #ff6600; }
+          .banner-wrap .banner-nav .item .cate.cate3:after {
+            border-color: transparent transparent rgba(255, 102, 0, 0.8); }
         .banner-wrap .banner-nav .item .cate.cate4 {
           background: rgba(241, 158, 0, 0.8); }
-          .banner-wrap .banner-nav .item .cate.cate4:before {
-            border-bottom-color: #f19e00; }
+          .banner-wrap .banner-nav .item .cate.cate4:after {
+            border-color: transparent transparent rgba(241, 158, 0, 0.8); }
         .banner-wrap .banner-nav .item .cate.cate5 {
           background: rgba(140, 185, 40, 0.8); }
-          .banner-wrap .banner-nav .item .cate.cate5:before {
-            border-bottom-color: #8cb928; }
+          .banner-wrap .banner-nav .item .cate.cate5:after {
+            border-color: transparent transparent rgba(140, 185, 40, 0.8); }
         .banner-wrap .banner-nav .item .cate.cate6 {
           background: rgba(69, 154, 131, 0.8); }
-          .banner-wrap .banner-nav .item .cate.cate6:before {
-            border-bottom-color: #459a83; }
+          .banner-wrap .banner-nav .item .cate.cate6:after {
+            border-color: transparent transparent rgba(69, 154, 131, 0.8); }
         .banner-wrap .banner-nav .item .cate.cate7 {
           background: rgba(34, 120, 179, 0.8); }
-          .banner-wrap .banner-nav .item .cate.cate7:before {
-            border-bottom-color: #2278b3; }
+          .banner-wrap .banner-nav .item .cate.cate7:after {
+            border-color: transparent transparent rgba(34, 120, 179, 0.8); }
         .banner-wrap .banner-nav .item .cate .alphabet {
           font-size: 5rem;
           line-height: 1;
@@ -8206,7 +8221,7 @@ header {
         .banner-wrap .banner-nav .item.slick-current .cate.cate3 {
           border-color: #ff6600; }
         .banner-wrap .banner-nav .item.slick-current .cate.cate4 {
-          border-color: #f19e00; }
+          border-color: rgba(241, 158, 0, 0.8); }
         .banner-wrap .banner-nav .item.slick-current .cate.cate5 {
           border-color: #8cb928; }
         .banner-wrap .banner-nav .item.slick-current .cate.cate6 {
