@@ -34,51 +34,51 @@ $(document).ready(function() {
 	})
 
 	// BANNER
-	$('.banner-slide').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		fade: true,
-		dots: false,
-		autoplay: false,
-		autoplaySpeed: 5000,
-		infinite: false,
-		asNavFor: '.banner-nav'
-	});
-	$('.banner-nav').slick({
-		slidesToShow: 7,
-		slidesToScroll: 7,
-		asNavFor: '.banner-slide',
-		dots: false,
-		arrows: false,
-		infinite: true,
-		// centerMode: true,
-		focusOnSelect: true,
-		// centerPadding: 0,
-		responsive: [{
-				breakpoint: 1199,
-				settings: {
-					slidesToShow: 6,
-					slidesToScroll: 1,
+		$('.banner-wrap .banner-slide').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: false,
+			fade: true,
+			dots: false,
+			autoplay: false,
+			autoplaySpeed: 5000,
+			infinite: false,
+			asNavFor: '.banner-wrap .banner-nav'
+		});
+		$('.banner-wrap .banner-nav').not('.slick-initialized').slick({
+			slidesToShow: 7,
+			slidesToScroll: 7,
+			asNavFor: '.banner-wrap .banner-slide',
+			dots: false,
+			arrows: false,
+			infinite: true,
+			// centerMode: true,
+			focusOnSelect: true,
+			// centerPadding: 0,
+			responsive: [{
+					breakpoint: 1199,
+					settings: {
+						slidesToShow: 6,
+						slidesToScroll: 1,
+					}
+				},
+				{
+					breakpoint: 991,
+					settings: {
+						slidesToShow: 4,
+						slidesToScroll: 1,
+					}
+				},
+				{
+					breakpoint: 767,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 1,
+						variableWidth: true,
+					}
 				}
-			},
-			{
-				breakpoint: 991,
-				settings: {
-					slidesToShow: 4,
-					slidesToScroll: 1,
-				}
-			},
-			{
-				breakpoint: 767,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1,
-					variableWidth: true,
-				}
-			}
-		]
-	});
+			]
+		});
 
 	$('.news-slick').slick({
 		slidesToShow: 4,

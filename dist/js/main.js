@@ -36,7 +36,7 @@ $(document).ready(function () {
 	});
 
 	// BANNER
-	$('.banner-slide').slick({
+	$('.banner-wrap .banner-slide').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
@@ -45,12 +45,12 @@ $(document).ready(function () {
 		autoplay: false,
 		autoplaySpeed: 5000,
 		infinite: false,
-		asNavFor: '.banner-nav'
+		asNavFor: '.banner-wrap .banner-nav'
 	});
-	$('.banner-nav').slick({
+	$('.banner-wrap .banner-nav').not('.slick-initialized').slick({
 		slidesToShow: 7,
 		slidesToScroll: 7,
-		asNavFor: '.banner-slide',
+		asNavFor: '.banner-wrap .banner-slide',
 		dots: false,
 		arrows: false,
 		infinite: true,
